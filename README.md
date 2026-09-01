@@ -19,14 +19,27 @@ The study does **not** assume that repeated records are internally represented b
 ## Current status
 
 | Version | Role | Status |
-|---|---|---|
+| --- | --- | --- |
 | v0.2 | Early experimental instrument | Closed; measurement-limited |
-| v0.3.1 | Calibration / discovery pilot | Completed |
+| v0.3.1 | Calibration / discovery pilot | Completed; exploratory |
 | v0.4.1 | First confirmatory attempt | **Aborted** — manipulation validity failure |
 | v0.4.2 | Second confirmatory attempt | **Aborted before data collection** — provenance preflight failure |
-| v0.4.3 | Behavioral-confirmatory study | **In progress** |
+| v0.4.3 | Behavioral-confirmatory study | **Completed and independently audited** |
 
 See [`docs/experiment_history.md`](docs/experiment_history.md) for the full audit trail.
+
+## v0.4.3 confirmatory result
+
+All **168/168** planned trajectories are valid, with no duplicate, missing, extra, or unresolved keys. All four preregistered validity gates pass.
+
+| Hypothesis | Retention | Paired RD | Holm-adjusted p | Verdict |
+| --- | ---: | ---: | ---: | --- |
+| H1: `passive_repeat > neutral_filler` | 22/32 vs 0/32 | 0.6875 | 9.5367e-7 | **Supported** |
+| H2: `active_plain > active_lineage` | 2/32 vs 0/32 | 0.0625 | 0.50 | **Not supported** |
+
+The provenance audit was exact for 168/168 trajectories, but remains descriptive/exploratory as preregistered. It cannot establish a confirmed provenance-use mechanism.
+
+The complete frozen materials, raw results, release manifest, and audit report are in [`experiments/v0_4_3`](experiments/v0_4_3).
 
 ## Research design
 
@@ -41,73 +54,41 @@ Core conditions:
 - `active_lineage` — the same traces with explicit root-source and non-independence metadata;
 - `independent_evidence` — multiple genuinely independent external sources, used as a positive control.
 
-A later independent counter-source is then introduced, and the model's final choice is measured.
-
-The primary behavioral outcome is whether the model **retains the initially supported claim** after receiving stronger counterevidence.
-
-## Confirmatory hypotheses in v0.4.3
-
-### H1 — Memory-source multiplication
-
-`passive_repeat` should retain the initial claim more often than the length-matched `neutral_filler` control.
-
-Confirmatory support requires both:
-
-- paired risk difference ≥ **+0.25**;
-- Holm-adjusted exact paired McNemar **p < 0.05**.
-
-### H2 — Lineage mitigation
-
-`active_plain` should retain the initial claim more often than `active_lineage`.
-
-The same confirmatory thresholds apply.
-
-## Provenance: secondary in v0.4.3
-
-Earlier work suggested a possible dissociation between explicit provenance judgments and behavioral evidence weighting. However, provenance auditing proved less stable than the behavioral task itself.
-
-For that reason, v0.4.3 still records provenance outputs, but they are:
-
-- descriptive / exploratory;
-- not a validity gate;
-- not part of H1 or H2;
-- not sufficient, by themselves, to establish a confirmed "provenance-use gap".
-
-A dedicated provenance study would be required for a strong mechanistic claim.
+A later independent counter-source is introduced, and the model's final choice is measured. The primary behavioral outcome is whether the model retains the initially supported claim after receiving stronger counterevidence.
 
 ## Experimental discipline
 
-This project follows several procedural rules:
+The project follows these procedural rules:
 
-- **pre-registration before confirmatory data collection;**
-- **fixed-N stopping;**
-- **fail-closed execution** for technical or schema failures;
-- **fresh held-out stimuli** for each new confirmatory attempt;
-- aborted attempts are retained and documented rather than deleted;
+- preregistration before confirmatory data collection;
+- fixed-N stopping;
+- fail-closed execution for technical or schema failures;
+- fresh held-out stimuli for materially revised confirmatory attempts;
+- aborted attempts are retained rather than deleted;
 - raw results are not merged across incompatible versions;
-- technical amendments are documented explicitly;
 - confirmatory thresholds are not changed after observing results;
-- pilot findings are not presented as confirmatory evidence.
+- behavioral observations, provenance judgments, and mechanistic interpretations remain distinct.
 
-## Model and local runtime
+## Model and runtime scope
 
-Current experimental family:
+The v0.4.3 result is specific to:
 
-- **Model:** `qwen3.5-4b`
-- **Runtime:** LM Studio local server
-- **Temperature:** `0`
-- **Thinking / reasoning mode:** OFF
-- structured outputs via JSON Schema
-- current code passes `strict` as a JSON/Python boolean (`True`)
+- model label: `qwen3.5-4b`;
+- LM Studio local server;
+- temperature: `0`;
+- thinking/reasoning mode: OFF;
+- structured outputs through JSON Schema.
 
-The study is therefore specific to this model/configuration unless replicated elsewhere.
+Generalization requires replication across additional models, runtimes, prompts, and task families.
 
 ## Repository structure
 
 ```text
 intra-agent-evidence-recycling/
 ├── README.md
-├── .gitignore
+├── CITATION.cff
+├── LICENSE-CODE
+├── LICENSE-DATA-DOCS.md
 ├── docs/
 │   └── experiment_history.md
 └── experiments/
@@ -117,28 +98,16 @@ intra-agent-evidence-recycling/
     └── v0_4_3/
 ```
 
-Each experiment folder should eventually contain, where applicable:
-
-- preregistration;
-- stimuli;
-- runner;
-- analysis script;
-- raw JSONL results;
-- freeze manifest / hashes;
-- amendments or abort notes;
-- version-specific README.
-
 ## Reproducibility
 
-The repository should allow another researcher to determine:
+The repository allows another researcher to determine:
 
-1. what hypothesis was frozen before data collection;
-2. which exact stimuli were used;
-3. which model/runtime configuration was used;
-4. how each condition was constructed;
-5. how technical failures were handled;
-6. how the final statistics were computed;
-7. which versions were exploratory, confirmatory, or aborted.
+1. what hypotheses and decision thresholds were frozen before collection;
+2. which exact stimuli and model configuration were used;
+3. how every condition was constructed;
+4. how failures and aborted attempts were handled;
+5. how the final statistics were computed;
+6. whether the complete release still matches its SHA-256 manifest.
 
 ## Interpretation policy
 
@@ -150,23 +119,17 @@ The project distinguishes between:
 
 Only the first two are directly observed. Mechanistic explanations remain hypotheses unless separately validated.
 
-## Publication status
-
-This repository is currently a private research workspace.
-
-No result from the ongoing v0.4.3 study should be described as confirmed until:
-
-1. the fixed-N collection is complete;
-2. the preregistered analysis is run;
-3. the raw results are independently audited;
-4. the final status of H1 and H2 is determined.
-
-A later public release may be accompanied by a preprint and an archived reproducibility package.
-
 ## Citation
 
-A formal citation file will be added when the first public reproducibility release is frozen.
+Citation metadata is provided in [`CITATION.cff`](CITATION.cff). GitHub can render it through the repository's **Cite this repository** control.
+
+Suggested citation:
+
+> Boticiu, Ovidiu. *Intra-Agent Evidence Recycling*, version 0.4.3, 2026. <https://github.com/ovidiuboticiu/intra-agent-evidence-recycling>.
 
 ## License
 
-No license has been assigned yet. A license should be selected before public release.
+- Software code is licensed under the [MIT License](LICENSE-CODE).
+- Original experimental data and documentation are licensed under [CC BY 4.0](LICENSE-DATA-DOCS.md).
+
+Copyright © 2026 Ovidiu Boticiu.

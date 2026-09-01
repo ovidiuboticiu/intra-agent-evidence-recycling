@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this repository, dataset, or experimental design, please cite it using the metadata below."
+title: "Intra-Agent Evidence Recycling"
+type: dataset
+authors:
+  - family-names: "Boticiu"
+    given-names: "Ovidiu"
+version: "0.4.3"
+date-released: 2026-09-01
+repository-code: "https://github.com/ovidiuboticiu/intra-agent-evidence-recycling"
+url: "https://github.com/ovidiuboticiu/intra-agent-evidence-recycling"
+abstract: >-
+  A preregistered behavioral study of whether repeated memory records derived
+  from one external source acquire excess evidential weight in a local LLM
+  agent, and whether explicit lineage metadata mitigates that effect.
+keywords:
+  - LLM agents
+  - agent memory
+  - evidence recycling
+  - provenance
+  - lineage metadata
+  - reproducibility
