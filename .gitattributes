@@ -1,6 +1,2 @@
-* text=auto eol=lf
-*.py text eol=lf
-*.md text eol=lf
-*.csv text eol=lf
-*.jsonl text eol=lf
-*.sha256 text eol=lf
+* text=auto
+experiments/v0_4_3/** -text
