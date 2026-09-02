@@ -1,0 +1,32 @@
+IAER v0.5.2 BEHAVIORAL ELIGIBILITY REPORT
+
+DECISION: INELIGIBLE
+VALID PLANNED ROWS: 36/36
+RECORDED FAILURE ROWS: 0
+
+PRESPECIFIED GATES
+G1_completeness_and_integrity: PASS
+G2_overall_condition_accuracy: FAIL
+G3_initial_orientation_symmetry: FAIL
+G4_presentation_order_symmetry: FAIL
+
+BY CONDITION
+baseline_initial: 4/12 (0.333)
+  initial=CLAIM_A: 3/6 (0.500)
+  initial=CLAIM_B: 1/6 (0.167)
+  order=A_FIRST: 2/6 (0.333)
+  order=B_FIRST: 2/6 (0.333)
+counter_single_strong: 12/12 (1.000)
+  initial=CLAIM_A: 6/6 (1.000)
+  initial=CLAIM_B: 6/6 (1.000)
+  order=A_FIRST: 6/6 (1.000)
+  order=B_FIRST: 6/6 (1.000)
+independent_five_initial: 2/12 (0.167)
+  initial=CLAIM_A: 1/6 (0.167)
+  initial=CLAIM_B: 1/6 (0.167)
+  order=A_FIRST: 0/6 (0.000)
+  order=B_FIRST: 2/6 (0.333)
+
+INTERPRETATION BOUNDARY
+Eligibility is not confirmation, refutation, or estimation of the IAER effect.
+A fresh public preregistration is required before any v0.6.0 confirmatory run.

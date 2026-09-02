@@ -1,0 +1,102 @@
+{
+  "experiment": "IAER",
+  "version": "v0.5.2",
+  "study_type": "behavioral_eligibility_pilot",
+  "decision": "INELIGIBLE",
+  "valid_rows": 36,
+  "failure_rows": 0,
+  "missing_keys": [],
+  "extra_keys": [],
+  "duplicate_keys": [],
+  "metadata_errors": [],
+  "gates": {
+    "G1_completeness_and_integrity": true,
+    "G2_overall_condition_accuracy": false,
+    "G3_initial_orientation_symmetry": false,
+    "G4_presentation_order_symmetry": false
+  },
+  "condition_summaries": {
+    "baseline_initial": {
+      "correct": 4,
+      "total": 12,
+      "by_initial": {
+        "CLAIM_A": {
+          "correct": 3,
+          "total": 6
+        },
+        "CLAIM_B": {
+          "correct": 1,
+          "total": 6
+        }
+      },
+      "by_presentation_order": {
+        "A_FIRST": {
+          "correct": 2,
+          "total": 6
+        },
+        "B_FIRST": {
+          "correct": 2,
+          "total": 6
+        }
+      },
+      "overall_gate_pass": false,
+      "orientation_gate_pass": false,
+      "presentation_order_gate_pass": false
+    },
+    "counter_single_strong": {
+      "correct": 12,
+      "total": 12,
+      "by_initial": {
+        "CLAIM_A": {
+          "correct": 6,
+          "total": 6
+        },
+        "CLAIM_B": {
+          "correct": 6,
+          "total": 6
+        }
+      },
+      "by_presentation_order": {
+        "A_FIRST": {
+          "correct": 6,
+          "total": 6
+        },
+        "B_FIRST": {
+          "correct": 6,
+          "total": 6
+        }
+      },
+      "overall_gate_pass": true,
+      "orientation_gate_pass": true,
+      "presentation_order_gate_pass": true
+    },
+    "independent_five_initial": {
+      "correct": 2,
+      "total": 12,
+      "by_initial": {
+        "CLAIM_A": {
+          "correct": 1,
+          "total": 6
+        },
+        "CLAIM_B": {
+          "correct": 1,
+          "total": 6
+        }
+      },
+      "by_presentation_order": {
+        "A_FIRST": {
+          "correct": 0,
+          "total": 6
+        },
+        "B_FIRST": {
+          "correct": 2,
+          "total": 6
+        }
+      },
+      "overall_gate_pass": false,
+      "orientation_gate_pass": false,
+      "presentation_order_gate_pass": false
+    }
+  },
+  "interpretation_boundary": "Eligibility is not confirmation, refutation, or estimation of the IAER effect."
+}
