@@ -1,0 +1,44 @@
+IAER v0.5.1 EXPLORATORY DIAGNOSTIC REPORT
+
+STATUS: COMPLETE — DESCRIPTIVE/EXPLORATORY ONLY
+VALID PLANNED ROWS: 48/48
+RETAINED TECHNICAL-FAILURE ROWS: 0
+OVERALL NORMATIVE ACCURACY: 29/48 (0.604)
+
+BY MODE AND EVIDENCE CONDITION
+mode=claim_label, condition=independent_five: accuracy 4/8 (0.500); CLAIM_A choices 4/8 (0.500)
+mode=claim_label, condition=source_only: accuracy 8/8 (1.000); CLAIM_A choices 4/8 (0.500)
+mode=explicit_odds, condition=independent_five: accuracy 3/8 (0.375); CLAIM_A choices 3/8 (0.375)
+mode=explicit_odds, condition=source_only: accuracy 7/8 (0.875); CLAIM_A choices 3/8 (0.375)
+mode=value_token, condition=independent_five: accuracy 0/8 (0.000); CLAIM_A choices 4/8 (0.500)
+mode=value_token, condition=source_only: accuracy 7/8 (0.875); CLAIM_A choices 3/8 (0.375)
+
+BY MODE, EVIDENCE CONDITION, AND INITIAL LABEL
+mode=claim_label, condition=independent_five, initial=CLAIM_A: accuracy 2/4 (0.500); CLAIM_A choices 2/4 (0.500)
+mode=claim_label, condition=independent_five, initial=CLAIM_B: accuracy 2/4 (0.500); CLAIM_A choices 2/4 (0.500)
+mode=claim_label, condition=source_only, initial=CLAIM_A: accuracy 4/4 (1.000); CLAIM_A choices 0/4 (0.000)
+mode=claim_label, condition=source_only, initial=CLAIM_B: accuracy 4/4 (1.000); CLAIM_A choices 4/4 (1.000)
+mode=explicit_odds, condition=independent_five, initial=CLAIM_A: accuracy 1/4 (0.250); CLAIM_A choices 1/4 (0.250)
+mode=explicit_odds, condition=independent_five, initial=CLAIM_B: accuracy 2/4 (0.500); CLAIM_A choices 2/4 (0.500)
+mode=explicit_odds, condition=source_only, initial=CLAIM_A: accuracy 4/4 (1.000); CLAIM_A choices 0/4 (0.000)
+mode=explicit_odds, condition=source_only, initial=CLAIM_B: accuracy 3/4 (0.750); CLAIM_A choices 3/4 (0.750)
+mode=value_token, condition=independent_five, initial=CLAIM_A: accuracy 0/4 (0.000); CLAIM_A choices 0/4 (0.000)
+mode=value_token, condition=independent_five, initial=CLAIM_B: accuracy 0/4 (0.000); CLAIM_A choices 4/4 (1.000)
+mode=value_token, condition=source_only, initial=CLAIM_A: accuracy 4/4 (1.000); CLAIM_A choices 0/4 (0.000)
+mode=value_token, condition=source_only, initial=CLAIM_B: accuracy 3/4 (0.750); CLAIM_A choices 3/4 (0.750)
+
+BY MODE AND PRESENTATION ORDER
+mode=claim_label, presentation_order=A_FIRST: accuracy 6/8 (0.750); CLAIM_A choices 6/8 (0.750)
+mode=claim_label, presentation_order=B_FIRST: accuracy 6/8 (0.750); CLAIM_A choices 2/8 (0.250)
+mode=explicit_odds, presentation_order=A_FIRST: accuracy 4/8 (0.500); CLAIM_A choices 4/8 (0.500)
+mode=explicit_odds, presentation_order=B_FIRST: accuracy 6/8 (0.750); CLAIM_A choices 2/8 (0.250)
+mode=value_token, presentation_order=A_FIRST: accuracy 4/8 (0.500); CLAIM_A choices 4/8 (0.500)
+mode=value_token, presentation_order=B_FIRST: accuracy 3/8 (0.375); CLAIM_A choices 3/8 (0.375)
+
+PAIRED REPRESENTATION CHANGES (16 item-condition pairs)
+claim_label -> value_token: improved=0, worsened=5, both_correct=7, both_wrong=4
+value_token -> explicit_odds: improved=3, worsened=0, both_correct=7, both_wrong=6
+
+INTERPRETATION BOUNDARY
+These are descriptive diagnostic patterns, not confirmatory tests or identified internal mechanisms.
+They cannot change the preregistered INVALID/INCONCLUSIVE status of v0.5.0.
