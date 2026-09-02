@@ -1,0 +1,186 @@
+{
+  "study": "IAER v0.5.0",
+  "phase": "mandatory behavioral preflight",
+  "scientific_data": false,
+  "validity_gate": true,
+  "timestamp_utc": "2026-09-02T14:11:36.388431+00:00",
+  "model": "microsoft_phi-4-mini-instruct",
+  "model_sha256": "01999f17c39cc3074afae5e9c539bc82d45f2dd7faa3917c66cbef76fce8c0c2",
+  "temperature": 0.0,
+  "seed": 42,
+  "timeout": 240,
+  "passed": false,
+  "cases": [
+    {
+      "case": 1,
+      "status": "valid",
+      "item_id": "PF5_A",
+      "condition": "source_only",
+      "initial": "CLAIM_A",
+      "expected": "CLAIM_B",
+      "got": "CLAIM_B",
+      "pass": true,
+      "belief": {
+        "chosen_claim": "CLAIM_B",
+        "confidence_chosen": 88
+      },
+      "memory": [
+        {
+          "id": "E1",
+          "text": "independent external source S1; reliability=0.65. For target device SENTINEL_OMICRON, it reports CLAIM_A (KAFU) and rejects CLAIM_B (ZERI)."
+        }
+      ],
+      "diagnostics": {
+        "finish_reason": "stop",
+        "reasoning_present": false,
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 21,
+          "total_tokens": 289,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "transport_attempts": 1
+      },
+      "duration_sec": 11.176150560379028
+    },
+    {
+      "case": 2,
+      "status": "valid",
+      "item_id": "PF5_A",
+      "condition": "independent_evidence",
+      "initial": "CLAIM_A",
+      "expected": "CLAIM_A",
+      "got": "CLAIM_A",
+      "pass": true,
+      "belief": {
+        "chosen_claim": "CLAIM_A",
+        "confidence_chosen": 99
+      },
+      "memory": [
+        {
+          "id": "E1",
+          "text": "independent external source S1; reliability=0.65. For target device SENTINEL_OMICRON, it reports CLAIM_A (KAFU) and rejects CLAIM_B (ZERI)."
+        },
+        {
+          "id": "E2",
+          "text": "independent external source S2; reliability=0.65. For target device SENTINEL_OMICRON, it reports CLAIM_A (KAFU) and rejects CLAIM_B (ZERI)."
+        },
+        {
+          "id": "E3",
+          "text": "independent external source S3; reliability=0.65. For target device SENTINEL_OMICRON, it reports CLAIM_A (KAFU) and rejects CLAIM_B (ZERI)."
+        },
+        {
+          "id": "E4",
+          "text": "independent external source S4; reliability=0.65. For target device SENTINEL_OMICRON, it reports CLAIM_A (KAFU) and rejects CLAIM_B (ZERI)."
+        },
+        {
+          "id": "E5",
+          "text": "independent external source S5; reliability=0.65. For target device SENTINEL_OMICRON, it reports CLAIM_A (KAFU) and rejects CLAIM_B (ZERI)."
+        }
+      ],
+      "diagnostics": {
+        "finish_reason": "stop",
+        "reasoning_present": false,
+        "usage": {
+          "prompt_tokens": 436,
+          "completion_tokens": 20,
+          "total_tokens": 456,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "transport_attempts": 1
+      },
+      "duration_sec": 10.69272756576538
+    },
+    {
+      "case": 3,
+      "status": "valid",
+      "item_id": "PF5_B",
+      "condition": "source_only",
+      "initial": "CLAIM_B",
+      "expected": "CLAIM_A",
+      "got": "CLAIM_A",
+      "pass": true,
+      "belief": {
+        "chosen_claim": "CLAIM_A",
+        "confidence_chosen": 92
+      },
+      "memory": [
+        {
+          "id": "E1",
+          "text": "independent external source S1; reliability=0.65. For target device SENTINEL_SIGMA, it reports CLAIM_B (WONU) and rejects CLAIM_A (BREG)."
+        }
+      ],
+      "diagnostics": {
+        "finish_reason": "stop",
+        "reasoning_present": false,
+        "usage": {
+          "prompt_tokens": 262,
+          "completion_tokens": 20,
+          "total_tokens": 282,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "transport_attempts": 1
+      },
+      "duration_sec": 7.9972875118255615
+    },
+    {
+      "case": 4,
+      "status": "valid",
+      "item_id": "PF5_B",
+      "condition": "independent_evidence",
+      "initial": "CLAIM_B",
+      "expected": "CLAIM_B",
+      "got": "CLAIM_A",
+      "pass": false,
+      "belief": {
+        "chosen_claim": "CLAIM_A",
+        "confidence_chosen": 99
+      },
+      "memory": [
+        {
+          "id": "E1",
+          "text": "independent external source S1; reliability=0.65. For target device SENTINEL_SIGMA, it reports CLAIM_B (WONU) and rejects CLAIM_A (BREG)."
+        },
+        {
+          "id": "E2",
+          "text": "independent external source S2; reliability=0.65. For target device SENTINEL_SIGMA, it reports CLAIM_B (WONU) and rejects CLAIM_A (BREG)."
+        },
+        {
+          "id": "E3",
+          "text": "independent external source S3; reliability=0.65. For target device SENTINEL_SIGMA, it reports CLAIM_B (WONU) and rejects CLAIM_A (BREG)."
+        },
+        {
+          "id": "E4",
+          "text": "independent external source S4; reliability=0.65. For target device SENTINEL_SIGMA, it reports CLAIM_B (WONU) and rejects CLAIM_A (BREG)."
+        },
+        {
+          "id": "E5",
+          "text": "independent external source S5; reliability=0.65. For target device SENTINEL_SIGMA, it reports CLAIM_B (WONU) and rejects CLAIM_A (BREG)."
+        }
+      ],
+      "diagnostics": {
+        "finish_reason": "stop",
+        "reasoning_present": false,
+        "usage": {
+          "prompt_tokens": 422,
+          "completion_tokens": 20,
+          "total_tokens": 442,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "transport_attempts": 1
+      },
+      "duration_sec": 10.871372938156128
+    }
+  ],
+  "frozen_manifest_sha256": "e732d6b4b2bb6e5af862986b291567818da31daae3af50d2bbd6d0e500b56590",
+  "python": "3.14.6",
+  "platform": "Windows-11-10.0.26200-SP0"
+}
