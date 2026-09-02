@@ -2,3 +2,4 @@
 experiments/v0_4_3/** -text
 experiments/v0_5_0/** -text
 experiments/v0_5_1_diagnostic/** -text
+experiments/v0_5_2_eligibility/** -text

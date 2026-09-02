@@ -1,0 +1,43 @@
+{
+  "experiment": "IAER",
+  "version": "v0.5.2",
+  "test_type": "neutral_technical_smoke",
+  "started_at_utc": "2026-09-02T15:46:38.624319Z",
+  "api_base": "http://127.0.0.1:1234/v1",
+  "expected_api_model": "microsoft_phi-4-mini-reasoning",
+  "expected_model_filename": "microsoft_Phi-4-mini-reasoning-Q4_K_M.gguf",
+  "expected_model_sha256": "ce8becd58f350d8ae0ec3bbb201ab36f750ffab17ab6238f39292d12ab68ea06",
+  "temperature": 0,
+  "seed": 42,
+  "check_code": "IAER-052",
+  "status": "PASS",
+  "model_path": "C:\\Users\\User\\.lmstudio\\models\\bartowski\\microsoft_Phi-4-mini-reasoning-GGUF\\microsoft_Phi-4-mini-reasoning-Q4_K_M.gguf",
+  "actual_model_sha256": "ce8becd58f350d8ae0ec3bbb201ab36f750ffab17ab6238f39292d12ab68ea06",
+  "model_sha256_pass": true,
+  "api_model_ids": [
+    "microsoft_phi-4-mini-reasoning",
+    "microsoft_phi-4-mini-instruct",
+    "qwen3.5-4b",
+    "qwen/qwen3-4b-thinking-2507",
+    "text-embedding-nomic-embed-text-v1.5"
+  ],
+  "api_model_pass": true,
+  "strict_json": {
+    "status": "READY",
+    "check_code": "IAER-052"
+  },
+  "raw_final_content": "{\n    \"status\": \"READY\",\n    \"check_code\": \"IAER-052\"\n}",
+  "reasoning_content_present": false,
+  "usage": {
+    "prompt_tokens": 54,
+    "completion_tokens": 25,
+    "total_tokens": 79,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "strict_json_pass": true,
+  "completed_at_utc": "2026-09-02T15:46:46.649928Z",
+  "duration_seconds": 8.026
+}
