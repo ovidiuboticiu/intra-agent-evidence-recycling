@@ -25,8 +25,13 @@ The study does **not** assume that repeated records are internally represented b
 | v0.4.1 | First confirmatory attempt | **Aborted** — manipulation validity failure |
 | v0.4.2 | Second confirmatory attempt | **Aborted before data collection** — provenance preflight failure |
 | v0.4.3 | Behavioral-confirmatory study | **Completed and independently audited** |
+| v0.5.0 | Cross-family replication attempt with Phi-4-mini-instruct | **Invalid/inconclusive** — mandatory behavioral preflight failed; no confirmatory outcomes collected |
+| v0.5.1 | Exploratory response-interface diagnostic | **Completed; exploratory only** — strong representation sensitivity and unreliable evidence aggregation |
+| v0.5.2 | Preregistered Phi-4-mini-reasoning eligibility pilot | **Valid but INELIGIBLE** — integrity passed; behavioral eligibility gates failed |
 
 See [`docs/experiment_history.md`](docs/experiment_history.md) for the full audit trail.
+
+The only completed confirmatory result remains v0.4.3. The v0.5.x studies are qualification and diagnostic studies and do not alter the v0.4.3 result.
 
 ## v0.4.3 confirmatory result
 
@@ -40,6 +45,30 @@ All **168/168** planned trajectories are valid, with no duplicate, missing, extr
 The provenance audit was exact for 168/168 trajectories, but remains descriptive/exploratory as preregistered. It cannot establish a confirmed provenance-use mechanism.
 
 The complete frozen materials, raw results, release manifest, and audit report are in [`experiments/v0_4_3`](experiments/v0_4_3).
+
+## Cross-family qualification after v0.4.3
+
+### v0.5.0 — Phi-4-mini-instruct
+
+The frozen package and technical checks passed, but one of four mandatory behavioral preflight cases failed. Under the fail-closed rule, v0.5.0 was declared `INVALID/INCONCLUSIVE`, and no confirmatory outcomes were collected.
+
+### v0.5.1 — exploratory diagnostic
+
+The diagnostic completed all 48 planned calls. Overall normative accuracy was 29/48 and varied substantially across the `claim_label`, `value_token`, and `explicit_odds` response representations. These findings are descriptive and exploratory; they cannot identify an internal mechanism or change the status of v0.5.0.
+
+### v0.5.2 — Phi-4-mini-reasoning eligibility pilot
+
+The pilot was [publicly preregistered](https://github.com/ovidiuboticiu/intra-agent-evidence-recycling/releases/tag/v0.5.2-preregistration) before behavioral collection. All 36 planned trajectories were valid, with no failure, missing, extra, duplicate, or metadata-mismatched rows.
+
+| Condition | Correct | Prespecified requirement | Result |
+| --- | ---: | ---: | --- |
+| `baseline_initial` | 4/12 | at least 10/12 | FAIL |
+| `counter_single_strong` | 12/12 | at least 10/12 | PASS |
+| `independent_five_initial` | 2/12 | at least 10/12 | FAIL |
+
+The preregistered decision was `INELIGIBLE`: this exact model/interface/configuration cannot proceed to an IAER v0.6.0 confirmatory run. This is a valid negative screening result, not a technical failure. The complete outcome is archived in [`experiments/v0_5_2_eligibility`](experiments/v0_5_2_eligibility) and in the [public results release](https://github.com/ovidiuboticiu/intra-agent-evidence-recycling/releases/tag/v0.5.2-results).
+
+These qualification outcomes neither confirm nor refute cross-family generalization of the IAER effect.
 
 ## Research design
 
@@ -81,6 +110,8 @@ The v0.4.3 result is specific to:
 
 Generalization requires replication across additional models, runtimes, prompts, and task families.
 
+The v0.5.0 and v0.5.1 studies used Microsoft Phi-4-mini-instruct. The v0.5.2 eligibility pilot used Microsoft Phi-4-mini-reasoning Q4_K_M. Their outcomes apply only to their frozen task interfaces and configurations.
+
 ## Repository structure
 
 ```text
@@ -95,7 +126,10 @@ intra-agent-evidence-recycling/
     ├── v0_3_1/
     ├── v0_4_1_aborted/
     ├── v0_4_2_aborted/
-    └── v0_4_3/
+    ├── v0_4_3/
+    ├── v0_5_0/
+    ├── v0_5_1_diagnostic/
+    └── v0_5_2_eligibility/
 ```
 
 ## Reproducibility
