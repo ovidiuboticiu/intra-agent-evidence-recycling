@@ -1,0 +1,41 @@
+{
+  "test": "IAER v0.5.0 non-scientific technical smoke test",
+  "scientific_data": false,
+  "timestamp_utc": "2026-09-02T13:35:37.257552+00:00",
+  "passed": true,
+  "expected_model": "microsoft_phi-4-mini-instruct",
+  "models_exposed": [
+    "microsoft_phi-4-mini-instruct",
+    "qwen3.5-4b",
+    "qwen/qwen3-4b-thinking-2507",
+    "text-embedding-nomic-embed-text-v1.5"
+  ],
+  "configuration": {
+    "base_url": "http://127.0.0.1:1234/v1",
+    "temperature": 0.0,
+    "seed": 42,
+    "max_tokens": 64,
+    "json_schema_strict_python_type": "bool"
+  },
+  "output": {
+    "status": "READY",
+    "check_code": "IAER-050"
+  },
+  "diagnostics": {
+    "models_transport_attempts": 1,
+    "chat_transport_attempts": 1,
+    "finish_reason": "stop",
+    "reasoning_present": false,
+    "usage": {
+      "prompt_tokens": 21,
+      "completion_tokens": 24,
+      "total_tokens": 45,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "duration_sec": 5.614624738693237,
+    "python": "3.14.6",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}
