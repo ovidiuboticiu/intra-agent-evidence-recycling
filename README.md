@@ -46,6 +46,15 @@ The provenance audit was exact for 168/168 trajectories, but remains descriptive
 
 The complete frozen materials, raw results, release manifest, and audit report are in [`experiments/v0_4_3`](experiments/v0_4_3).
 
+## Preprint
+
+The citation-locked manuscript is published as a public, non-peer-reviewed preprint:
+
+> Boticiu, Ovidiu. (2026). *When One Source Returns: A Preregistered Behavioral Study of Intra-Agent Evidence Recycling* (Version 0.4) [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.22282120
+
+- Preprint DOI: [10.5281/zenodo.22282120](https://doi.org/10.5281/zenodo.22282120)
+- Reproducibility archive: [10.5281/zenodo.22259801](https://doi.org/10.5281/zenodo.22259801)
+
 ## Cross-family qualification after v0.4.3
 
 ### v0.5.0 — Phi-4-mini-instruct
@@ -157,9 +166,13 @@ Only the first two are directly observed. Mechanistic explanations remain hypoth
 
 Citation metadata is provided in [`CITATION.cff`](CITATION.cff). GitHub can render it through the repository's **Cite this repository** control.
 
-Suggested citation:
+Preferred manuscript citation:
 
-> Boticiu, Ovidiu. *Intra-Agent Evidence Recycling*, version 0.4.3, 2026. <https://github.com/ovidiuboticiu/intra-agent-evidence-recycling>.
+> Boticiu, Ovidiu. (2026). *When One Source Returns: A Preregistered Behavioral Study of Intra-Agent Evidence Recycling* (Version 0.4) [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.22282120
+
+Software and reproducibility archive:
+
+> Boticiu, Ovidiu. (2026). *Intra-Agent Evidence Recycling v0.4.3 — Behavioral Confirmatory Study* (Version 0.4.3) [Software]. Zenodo. https://doi.org/10.5281/zenodo.22259801
 
 ## License
 

@@ -1,14 +1,15 @@
 cff-version: 1.2.0
-message: "If you use this repository, dataset, or experimental design, please cite it using the metadata below."
+message: "If you use this repository, dataset, or experimental design, please cite the preferred manuscript below."
 title: "Intra-Agent Evidence Recycling"
-type: dataset
+type: software
 authors:
   - family-names: "Boticiu"
     given-names: "Ovidiu"
 version: "0.4.3"
 date-released: 2026-09-01
+doi: "10.5281/zenodo.22259801"
 repository-code: "https://github.com/ovidiuboticiu/intra-agent-evidence-recycling"
-url: "https://github.com/ovidiuboticiu/intra-agent-evidence-recycling"
+url: "https://doi.org/10.5281/zenodo.22259801"
 abstract: >-
   A preregistered behavioral study of whether repeated memory records derived
   from one external source acquire excess evidential weight in a local LLM
@@ -20,3 +21,15 @@ keywords:
   - provenance
   - lineage metadata
   - reproducibility
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Boticiu"
+      given-names: "Ovidiu"
+  title: "When One Source Returns: A Preregistered Behavioral Study of Intra-Agent Evidence Recycling"
+  year: 2026
+  month: 9
+  day: 3
+  version: "0.4"
+  doi: "10.5281/zenodo.22282120"
+  url: "https://doi.org/10.5281/zenodo.22282120"
