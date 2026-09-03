@@ -14,7 +14,7 @@ A second question concerns mitigation:
 
 > **Does explicit lineage metadata — for example, identifying a self-generated record as derived from `E1` and as not independently evidential — reduce this excess behavioral weight?**
 
-The study does **not** assume that repeated records are internally represented by the model as independent sources. Behavioral effects and provenance understanding are treated as separate constructs.
+The study does **not** assume that repeated records are internally represented by the model as independent sources. Behavioral effects, provenance understanding, and mechanistic interpretation are treated as separate constructs.
 
 ## Current status
 
@@ -28,10 +28,11 @@ The study does **not** assume that repeated records are internally represented b
 | v0.5.0 | Cross-family replication attempt with Phi-4-mini-instruct | **Invalid/inconclusive** — mandatory behavioral preflight failed; no confirmatory outcomes collected |
 | v0.5.1 | Exploratory response-interface diagnostic | **Completed; exploratory only** — strong representation sensitivity and unreliable evidence aggregation |
 | v0.5.2 | Preregistered Phi-4-mini-reasoning eligibility pilot | **Valid but INELIGIBLE** — integrity passed; behavioral eligibility gates failed |
+| v0.6 | Staged Ministral program: Calibration → Eligibility → Confirmatory IAER | **CLOSED — CALIBRATION_FAILURE; STOP BEFORE ELIGIBILITY** |
 
 See [`docs/experiment_history.md`](docs/experiment_history.md) for the full audit trail.
 
-The only completed confirmatory result remains v0.4.3. The v0.5.x studies are qualification and diagnostic studies and do not alter the v0.4.3 result.
+The only completed confirmatory IAER result remains **v0.4.3**. The v0.5.x and v0.6 studies are qualification, diagnostic, or calibration studies and do not alter the v0.4.3 confirmatory result.
 
 ## v0.4.3 confirmatory result
 
@@ -75,15 +76,62 @@ The pilot was [publicly preregistered](https://github.com/ovidiuboticiu/intra-ag
 | `counter_single_strong` | 12/12 | at least 10/12 | PASS |
 | `independent_five_initial` | 2/12 | at least 10/12 | FAIL |
 
-The preregistered decision was `INELIGIBLE`: this exact model/interface/configuration cannot proceed to an IAER v0.6.0 confirmatory run. This is a valid negative screening result, not a technical failure. The complete outcome is archived in [`experiments/v0_5_2_eligibility`](experiments/v0_5_2_eligibility) and in the [public results release](https://github.com/ovidiuboticiu/intra-agent-evidence-recycling/releases/tag/v0.5.2-results).
+The preregistered decision was `INELIGIBLE`: this exact model/interface/configuration did not proceed to a confirmatory IAER run. The complete outcome is archived in [`experiments/v0_5_2_eligibility`](experiments/v0_5_2_eligibility) and in the [public results release](https://github.com/ovidiuboticiu/intra-agent-evidence-recycling/releases/tag/v0.5.2-results).
 
-These qualification outcomes neither confirm nor refute cross-family generalization of the IAER effect.
+### v0.6 — Ministral calibration program
+
+v0.6 introduced three strictly separated stages:
+
+**Calibration → Eligibility → Confirmatory IAER**
+
+Candidate model:
+
+- Ministral-3-8B-Instruct-2512;
+- GGUF Q4_K_M;
+- LM Studio 0.4.23;
+- context length 8192;
+- temperature 0;
+- seed 42.
+
+Calibration used only normative evidence-integration controls and excluded IAER treatment conditions. Two response interfaces were prespecified.
+
+#### Interface A
+
+- 24/24 valid planned rows;
+- 0 failure rows;
+- `baseline_initial`: 8/8 correct;
+- `counter_single_strong`: 8/8 correct;
+- `independent_five_initial`: 0/8 correct;
+- decision: `INTERFACE_A_FAILED_BEHAVIORALLY`.
+
+Because integrity passed and the failure was behavioral, Interface B was authorized under the frozen rule.
+
+#### Interface B
+
+- 24/24 valid planned rows;
+- 0 failure rows;
+- `baseline_initial`: 8/8 correct;
+- `counter_single_strong`: 8/8 correct;
+- `independent_five_initial`: 0/8 correct;
+- decision: `CALIBRATION_FAILURE`.
+
+Final decision:
+
+> **STOP BEFORE ELIGIBILITY**
+
+Eligibility and Confirmatory IAER were not run. v0.6 is therefore a **calibration failure, not an IAER non-replication**.
+
+The [v0.6 results release](https://github.com/ovidiuboticiu/intra-agent-evidence-recycling/releases/tag/v0.6-calibration-results) includes the final closure archive and SHA-256 record.
+
+A closure audit also documented a publication-process deviation: the original Freeze-A tag contained the program-level protocol but omitted several calibration-specific implementation files that the publication checklist had intended to include. The original preregistration tag was not rewritten. The deviation is preserved in [`experiments/v0_6_ministral/01_calibration/FREEZE_A_PUBLICATION_DEVIATION_v0_6.md`](experiments/v0_6_ministral/01_calibration/FREEZE_A_PUBLICATION_DEVIATION_v0_6.md).
+
+These qualification and calibration outcomes neither confirm nor refute cross-family generalization of the IAER effect.
 
 ## Research design
 
 The experiments use fictional binary claims about fictional devices, limiting contamination by real-world knowledge.
 
-Core conditions:
+Core conditions in the confirmatory IAER design include:
 
 - `source_only` — one independent external source supports the initial claim;
 - `neutral_filler` — the same source plus unrelated memory records;
@@ -105,11 +153,13 @@ The project follows these procedural rules:
 - aborted attempts are retained rather than deleted;
 - raw results are not merged across incompatible versions;
 - confirmatory thresholds are not changed after observing results;
-- behavioral observations, provenance judgments, and mechanistic interpretations remain distinct.
+- behavioral observations, provenance judgments, and mechanistic interpretations remain distinct;
+- model/task eligibility is separated from confirmatory inference;
+- publication deviations are documented rather than retroactively hidden.
 
 ## Model and runtime scope
 
-The v0.4.3 result is specific to:
+The v0.4.3 confirmatory result is specific to:
 
 - model label: `qwen3.5-4b`;
 - LM Studio local server;
@@ -117,9 +167,9 @@ The v0.4.3 result is specific to:
 - thinking/reasoning mode: OFF;
 - structured outputs through JSON Schema.
 
-Generalization requires replication across additional models, runtimes, prompts, and task families.
+Generalization requires valid replication across additional models, runtimes, prompts, and task families.
 
-The v0.5.0 and v0.5.1 studies used Microsoft Phi-4-mini-instruct. The v0.5.2 eligibility pilot used Microsoft Phi-4-mini-reasoning Q4_K_M. Their outcomes apply only to their frozen task interfaces and configurations.
+The v0.5.0 and v0.5.1 studies used Microsoft Phi-4-mini-instruct. The v0.5.2 eligibility pilot used Microsoft Phi-4-mini-reasoning Q4_K_M. v0.6 used Ministral-3-8B-Instruct-2512 Q4_K_M. Their outcomes apply only to their frozen task interfaces and configurations.
 
 ## Repository structure
 
@@ -138,19 +188,21 @@ intra-agent-evidence-recycling/
     ├── v0_4_3/
     ├── v0_5_0/
     ├── v0_5_1_diagnostic/
-    └── v0_5_2_eligibility/
+    ├── v0_5_2_eligibility/
+    └── v0_6_ministral/
 ```
 
 ## Reproducibility
 
-The repository allows another researcher to determine:
+The repository is intended to allow another researcher to determine:
 
 1. what hypotheses and decision thresholds were frozen before collection;
 2. which exact stimuli and model configuration were used;
 3. how every condition was constructed;
 4. how failures and aborted attempts were handled;
 5. how the final statistics were computed;
-6. whether the complete release still matches its SHA-256 manifest.
+6. whether archived releases match their SHA-256 records;
+7. where any preregistration or publication-process deviations occurred.
 
 ## Interpretation policy
 
@@ -161,6 +213,12 @@ The project distinguishes between:
 - **mechanistic interpretation** — why the model behaved that way.
 
 Only the first two are directly observed. Mechanistic explanations remain hypotheses unless separately validated.
+
+## Current research disposition
+
+The only completed confirmatory IAER result remains v0.4.3.
+
+The Phi and Ministral follow-ups show that cross-family replication is presently limited by task/interface eligibility and evidence-aggregation behavior. If the project continues, the strongest defensible next step is a **new instrument-redesign version with a complete pre-outcome public freeze**, rather than immediately testing additional model families under the unchanged aggregation control.
 
 ## Citation
 
