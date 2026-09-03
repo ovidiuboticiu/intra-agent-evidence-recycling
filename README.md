@@ -24,7 +24,7 @@ Behavioral resistance to counterevidence is not treated as proof that the model 
 
 **Project disposition: PAUSED — instrument redesign path exhausted under v0.7.**
 
-No v0.8 behavioral run is currently authorized or recommended. The next step is program-level scientific audit and preservation, not another model run.
+No v0.8 behavioral run is currently authorized or recommended. The experimental program has completed its v0.2–v0.7 scientific audit. Current work is limited to synthesis and publication of the preserved results; no new behavioral collection is part of the methodological note.
 
 | Version | Role | Status |
 | --- | --- | --- |
@@ -40,6 +40,19 @@ No v0.8 behavioral run is currently authorized or recommended. The next step is 
 | v0.7 | Ministral measurement-decoupling instrument redesign | **CLOSED — REDESIGN_FAILED_STOP; project PAUSED** |
 
 See [`docs/experiment_history.md`](docs/experiment_history.md) for the full audit trail and [`docs/program_audit_v0_2_to_v0_7.md`](docs/program_audit_v0_2_to_v0_7.md) for the program-level scientific assessment.
+
+## Methodological note: cross-family instrument qualification
+
+A separate methodological/negative-results manuscript synthesizes v0.5.0–v0.7 without changing the inferential status of the v0.4.3 confirmatory result.
+
+Current preprint-ready manuscript:
+
+- [`docs/METHODOLOGICAL_NOTE_PREPRINT_v0_3.md`](docs/METHODOLOGICAL_NOTE_PREPRINT_v0_3.md) — **Before Calling It a Non-Replication: Instrument Qualification Across LLM Families**
+- [`docs/METHODOLOGICAL_NOTE_FACTUAL_CITATION_AUDIT_v0_3.md`](docs/METHODOLOGICAL_NOTE_FACTUAL_CITATION_AUDIT_v0_3.md) — factual/citation audit
+- [`docs/METHODOLOGICAL_NOTE_PRIOR_ART_GATE_v0_1.md`](docs/METHODOLOGICAL_NOTE_PRIOR_ART_GATE_v0_1.md) — prior-art/novelty gate
+- [`docs/METHODOLOGICAL_NOTE_REVIEWER_AUDIT_v0_1.md`](docs/METHODOLOGICAL_NOTE_REVIEWER_AUDIT_v0_1.md) — reviewer-style audit that motivated the narrowed framing
+
+The methodological note does **not** claim priority for repeated/dependent-evidence effects or for construct-validity arguments in LLM evaluation. Its contribution is the preserved longitudinal case study showing why qualification failure should not be mislabeled as a cross-family non-replication.
 
 ## Only completed confirmatory IAER result: v0.4.3
 
@@ -177,7 +190,11 @@ intra-agent-evidence-recycling/
 ├── LICENSE-DATA-DOCS.md
 ├── docs/
 │   ├── experiment_history.md
-│   └── program_audit_v0_2_to_v0_7.md
+│   ├── program_audit_v0_2_to_v0_7.md
+│   ├── METHODOLOGICAL_NOTE_PREPRINT_v0_3.md
+│   ├── METHODOLOGICAL_NOTE_FACTUAL_CITATION_AUDIT_v0_3.md
+│   ├── METHODOLOGICAL_NOTE_PRIOR_ART_GATE_v0_1.md
+│   └── METHODOLOGICAL_NOTE_REVIEWER_AUDIT_v0_1.md
 └── experiments/
     ├── v0_3_1/
     ├── v0_4_1_aborted/
@@ -196,7 +213,9 @@ intra-agent-evidence-recycling/
 
 The v0.4.3 H1 effect remains a valid, configuration-specific confirmatory finding. Cross-family generalization remains unresolved because later model families did not reach a valid confirmatory IAER comparison.
 
-The v0.7 stop rule has been reached. The project should not proceed directly to v0.8 by changing prompts or testing more models until one passes. A future restart requires a materially new measurement idea satisfying the restart criteria in [`docs/program_audit_v0_2_to_v0_7.md`](docs/program_audit_v0_2_to_v0_7.md).
+The v0.7 stop rule has been reached. The project should not proceed directly to v0.8 by changing prompts or testing more models until one passes. A future experimental restart requires a materially new measurement idea satisfying the restart criteria in [`docs/program_audit_v0_2_to_v0_7.md`](docs/program_audit_v0_2_to_v0_7.md).
+
+The current non-experimental work product is the methodological note in [`docs/METHODOLOGICAL_NOTE_PREPRINT_v0_3.md`](docs/METHODOLOGICAL_NOTE_PREPRINT_v0_3.md).
 
 ## Citation
 
