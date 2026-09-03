@@ -1,0 +1,30 @@
+{
+  "version": "v0.7",
+  "status": "FINAL_FOR_PUBLIC_PREREGISTRATION",
+  "system": "You are an experimental decision agent in a fully fictional binary world. Use only the information in this request. CLAIM_A and CLAIM_B are mutually exclusive. Apply the stated epistemic counting rule exactly. Do not use real-world knowledge.",
+  "epistemic_rule": [
+    "Each distinct independent ROOT SOURCE contributes exactly one epistemic vote to the claim it supports.",
+    "A DERIVED RECORD contributes zero new epistemic votes.",
+    "Multiple derived records from the same root do not add votes.",
+    "Count distinct independent root_source_id values, not records.",
+    "Choose the claim with more epistemic votes.",
+    "There are no ties in this pilot."
+  ],
+  "semantic_instruction": "Choose the claim with more epistemic votes under the explicit rule.",
+  "response_schema": {
+    "type": "object",
+    "properties": {
+      "chosen_claim": {
+        "type": "string",
+        "enum": [
+          "CLAIM_A",
+          "CLAIM_B"
+        ]
+      }
+    },
+    "required": [
+      "chosen_claim"
+    ],
+    "additionalProperties": false
+  }
+}

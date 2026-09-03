@@ -1,0 +1,21 @@
+{
+  "freeze_status": "FROZEN",
+  "program_version": "v0.7",
+  "stage": "measurement_decoupling_pilot",
+  "api_base": "http://127.0.0.1:1234/v1",
+  "model_id": "ministral-3-8b-instruct-2512",
+  "model_filename": "Ministral-3-8B-Instruct-2512-Q4_k_m.gguf",
+  "model_sha256": "e7480c2c16298ca644c9980e1301b6fea087f210900e69ada57ffd83d6016c02",
+  "model_size_bytes": 5198386976,
+  "lm_studio_version": "0.4.23",
+  "context_length": 8192,
+  "temperature": 0,
+  "seed": 42,
+  "order_seed": 2026090307,
+  "max_tokens": 256,
+  "timeout_seconds": 600,
+  "transport_retry_limit": 1,
+  "concurrency": "sequential",
+  "manifest_filename": "FREEZE_MANIFEST_v0_7.sha256",
+  "behavioral_collection_authorization": "ONLY_AFTER_COMPLETE_PUBLIC_PREREGISTRATION_RELEASE"
+}
