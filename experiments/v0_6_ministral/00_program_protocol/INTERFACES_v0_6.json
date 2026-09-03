@@ -1,0 +1,36 @@
+{
+  "status": "FROZEN_AT_FREEZE_A",
+  "selection_rule": [
+    "Run Interface A on Calibration.",
+    "If A passes C1-C4, lock A and do not run B.",
+    "If A fails, run B on Calibration.",
+    "If B passes C1-C4, lock B.",
+    "If B fails, stop v0.6 under this design."
+  ],
+  "interface_A": {
+    "name": "canonical_claim_plus_confidence",
+    "behavioral_field": "chosen_claim",
+    "confidence_status": "descriptive_only",
+    "json_schema": {
+      "type": "object",
+      "properties": {
+        "chosen_claim": {"type": "string", "enum": ["CLAIM_A", "CLAIM_B"]},
+        "confidence_chosen": {"type": "number", "minimum": 0, "maximum": 100}
+      },
+      "required": ["chosen_claim", "confidence_chosen"],
+      "additionalProperties": false
+    }
+  },
+  "interface_B": {
+    "name": "minimal_claim_only",
+    "behavioral_field": "chosen_claim",
+    "json_schema": {
+      "type": "object",
+      "properties": {
+        "chosen_claim": {"type": "string", "enum": ["CLAIM_A", "CLAIM_B"]}
+      },
+      "required": ["chosen_claim"],
+      "additionalProperties": false
+    }
+  }
+}

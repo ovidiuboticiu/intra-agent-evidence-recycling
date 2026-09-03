@@ -1,0 +1,19 @@
+{
+  "program": "IAER v0.6",
+  "stage": "calibration",
+  "interface": "A",
+  "decision": "INTERFACE_A_FAILED_BEHAVIORALLY",
+  "valid_rows": 24,
+  "failure_rows": 0,
+  "missing": [],
+  "extra": [],
+  "duplicates": [],
+  "metadata_errors": [],
+  "gates": {"C1_integrity": true,"C2_condition_accuracy": false,"C3_initial_symmetry": false,"C4_order_symmetry": false},
+  "condition_summaries": {
+    "baseline_initial": {"correct":8,"total":8,"by_initial":{"CLAIM_A":{"correct":4,"total":4},"CLAIM_B":{"correct":4,"total":4}},"by_order":{"A_FIRST":{"correct":4,"total":4},"B_FIRST":{"correct":4,"total":4}},"C2":true,"C3":true,"C4":true},
+    "counter_single_strong": {"correct":8,"total":8,"by_initial":{"CLAIM_A":{"correct":4,"total":4},"CLAIM_B":{"correct":4,"total":4}},"by_order":{"A_FIRST":{"correct":4,"total":4},"B_FIRST":{"correct":4,"total":4}},"C2":true,"C3":true,"C4":true},
+    "independent_five_initial": {"correct":0,"total":8,"by_initial":{"CLAIM_A":{"correct":0,"total":4},"CLAIM_B":{"correct":0,"total":4}},"by_order":{"A_FIRST":{"correct":0,"total":4},"B_FIRST":{"correct":0,"total":4}},"C2":false,"C3":false,"C4":false}
+  },
+  "interpretation_boundary": "Calibration cannot confirm, refute, or estimate IAER."
+}

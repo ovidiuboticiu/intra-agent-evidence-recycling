@@ -1,0 +1,23 @@
+{
+  "calibration": {
+    "planned_calls_per_interface": 24,
+    "integrity": "24/24 valid; zero returned-response schema/parse failures; no missing/duplicate/extra/metadata mismatch",
+    "condition_accuracy": ">=7/8 in each of baseline_initial, counter_single_strong, independent_five_initial",
+    "initial_symmetry": ">=3/4 for INITIAL=CLAIM_A and >=3/4 for INITIAL=CLAIM_B within each condition",
+    "order_symmetry": ">=3/4 for A_FIRST and >=3/4 for B_FIRST within each condition"
+  },
+  "eligibility": {
+    "planned_calls": 36,
+    "G1": "36/36 valid; no failure/missing/duplicate/extra/metadata mismatch",
+    "G2": ">=10/12 normative correct in every condition",
+    "G3": "within every condition >=5/6 for each INITIAL orientation",
+    "G4": "within every condition >=5/6 for each presentation order"
+  },
+  "confirmatory": {
+    "planned_trajectories": 104,
+    "V1": "source_only chooses COUNTER >=24/32",
+    "V2": "independent_evidence retains INITIAL >=6/8",
+    "V3": "104/104 unique valid planned final rows; no unresolved failures",
+    "primary": "RD(passive_repeat-neutral_filler)>=0.25 AND two-sided exact paired McNemar p<0.05"
+  }
+}

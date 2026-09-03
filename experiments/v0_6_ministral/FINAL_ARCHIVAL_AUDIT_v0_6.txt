@@ -1,0 +1,36 @@
+IAER v0.6 CALIBRATION FINAL ARCHIVAL AUDIT
+STATUS: PASS FOR TRANSPARENT CLOSURE
+
+RAW A: PRESENT
+RAW B: PRESENT
+A REPORT DECISION: INTERFACE_A_FAILED_BEHAVIORALLY
+B REPORT DECISION: CALIBRATION_FAILURE
+A VALID/FAILURE: 24/0
+B VALID/FAILURE: 24/0
+
+RAW B INTEGRITY:
+- 24/24 valid
+- 24/24 unique planned item-condition keys
+- model ID consistent
+- model SHA-256 consistent
+- temperature=0 throughout
+- seed=42 throughout
+- finish_reason=stop throughout
+- transport_attempts=1 throughout
+- frozen manifest SHA consistent throughout
+
+B CONDITION ACCURACY:
+- baseline_initial 8/8
+- counter_single_strong 8/8
+- independent_five_initial 0/8
+
+FINAL DECISION:
+CALIBRATION_FAILURE — STOP BEFORE ELIGIBILITY
+
+PUBLICATION DEVIATION:
+Documented. The original Freeze-A tag is not rewritten.
+
+SECONDARY SPECIFICATION INCONSISTENCY:
+- INTERFACES_v0_6.json retained older simplified A->B wording.
+- authoritative protocol/prereg/runner used integrity-fail -> STOP.
+- realized impact: none, because Interface A C1 integrity PASS.

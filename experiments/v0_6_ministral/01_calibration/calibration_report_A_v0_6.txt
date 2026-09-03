@@ -1,0 +1,31 @@
+IAER v0.6 CALIBRATION — INTERFACE A
+
+DECISION: INTERFACE_A_FAILED_BEHAVIORALLY
+VALID ROWS: 24/24
+FAILURE ROWS: 0
+
+GATES
+C1_integrity: PASS
+C2_condition_accuracy: FAIL
+C3_initial_symmetry: FAIL
+C4_order_symmetry: FAIL
+
+BY CONDITION
+baseline_initial: 8/8 (1.000)
+  initial=CLAIM_A: 4/4 (1.000)
+  initial=CLAIM_B: 4/4 (1.000)
+  order=A_FIRST: 4/4 (1.000)
+  order=B_FIRST: 4/4 (1.000)
+counter_single_strong: 8/8 (1.000)
+  initial=CLAIM_A: 4/4 (1.000)
+  initial=CLAIM_B: 4/4 (1.000)
+  order=A_FIRST: 4/4 (1.000)
+  order=B_FIRST: 4/4 (1.000)
+independent_five_initial: 0/8 (0.000)
+  initial=CLAIM_A: 0/4 (0.000)
+  initial=CLAIM_B: 0/4 (0.000)
+  order=A_FIRST: 0/4 (0.000)
+  order=B_FIRST: 0/4 (0.000)
+
+INTERPRETATION BOUNDARY
+Calibration cannot confirm, refute, or estimate IAER.
