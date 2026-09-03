@@ -1,0 +1,129 @@
+{
+  "program": "IAER v0.7",
+  "stage": "measurement_decoupling_pilot",
+  "decision": "REDESIGN_FAILED_STOP",
+  "valid_rows": 48,
+  "failure_rows": 0,
+  "missing": [],
+  "extra": [],
+  "duplicates": [],
+  "metadata_error_rows": [],
+  "gates": {
+    "P1_integrity": true,
+    "P2_condition_accuracy": false,
+    "P3_initial_symmetry": false,
+    "P4_order_symmetry": false,
+    "P5_derived_lure": false
+  },
+  "condition_summaries": {
+    "two_initial_one_counter": {
+      "correct": 12,
+      "total": 12,
+      "by_initial": {
+        "CLAIM_A": [
+          6,
+          6
+        ],
+        "CLAIM_B": [
+          6,
+          6
+        ]
+      },
+      "by_order": {
+        "A_FIRST": [
+          6,
+          6
+        ],
+        "B_FIRST": [
+          6,
+          6
+        ]
+      },
+      "condition_accuracy_pass": true,
+      "initial_symmetry_pass": true,
+      "order_symmetry_pass": true
+    },
+    "one_initial_two_counter": {
+      "correct": 11,
+      "total": 12,
+      "by_initial": {
+        "CLAIM_A": [
+          6,
+          6
+        ],
+        "CLAIM_B": [
+          5,
+          6
+        ]
+      },
+      "by_order": {
+        "A_FIRST": [
+          6,
+          6
+        ],
+        "B_FIRST": [
+          5,
+          6
+        ]
+      },
+      "condition_accuracy_pass": true,
+      "initial_symmetry_pass": true,
+      "order_symmetry_pass": true
+    },
+    "derived_lure_initial_two_counter": {
+      "correct": 7,
+      "total": 12,
+      "by_initial": {
+        "CLAIM_A": [
+          5,
+          6
+        ],
+        "CLAIM_B": [
+          2,
+          6
+        ]
+      },
+      "by_order": {
+        "A_FIRST": [
+          5,
+          6
+        ],
+        "B_FIRST": [
+          2,
+          6
+        ]
+      },
+      "condition_accuracy_pass": false,
+      "initial_symmetry_pass": false,
+      "order_symmetry_pass": false
+    },
+    "three_initial_two_counter": {
+      "correct": 12,
+      "total": 12,
+      "by_initial": {
+        "CLAIM_A": [
+          6,
+          6
+        ],
+        "CLAIM_B": [
+          6,
+          6
+        ]
+      },
+      "by_order": {
+        "A_FIRST": [
+          6,
+          6
+        ],
+        "B_FIRST": [
+          6,
+          6
+        ]
+      },
+      "condition_accuracy_pass": true,
+      "initial_symmetry_pass": true,
+      "order_symmetry_pass": true
+    }
+  },
+  "interpretation_boundary": "v0.7 tests instrument usability only; it does not confirm, refute, or estimate IAER."
+}

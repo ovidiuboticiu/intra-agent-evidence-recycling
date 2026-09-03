@@ -1,0 +1,44 @@
+IAER v0.7 FINAL ARCHIVAL AUDIT
+
+DECISION: REDESIGN_FAILED_STOP
+
+INTEGRITY
+- rows: 48/48 valid
+- failure rows: 0
+- unique item-condition keys: 48/48
+- model ID: consistent
+- model SHA-256: consistent
+- temperature: 0 throughout
+- seed: 42 throughout
+- finish_reason=stop: 48/48
+- transport_attempts=1: 48/48
+- manifest SHA: one consistent value
+- prompt spec SHA: one consistent value
+
+CONDITION ACCURACY
+- R1 two_initial_one_counter: 12/12
+- R2 one_initial_two_counter: 11/12
+- R3 derived_lure_initial_two_counter: 7/12
+- R4 three_initial_two_counter: 12/12
+
+R3 ERRORS
+- total errors: 5
+- errors choosing INITIAL: 5/5
+- cross-cell details:
+  - CLAIM_A × A_FIRST: 3/3 correct
+  - CLAIM_A × B_FIRST: 2/3 correct; failed items: R7I002
+  - CLAIM_B × A_FIRST: 2/3 correct; failed items: R7I009
+  - CLAIM_B × B_FIRST: 0/3 correct; failed items: R7I003, R7I007, R7I001
+
+FROZEN GATES
+- P1: PASS
+- P2: FAIL
+- P3: FAIL
+- P4: FAIL
+- P5: FAIL
+
+SCIENTIFIC STATUS
+- instrument redesign failed under frozen rule
+- no IAER confirmation/non-replication inference
+- no rescue run authorized
+- project disposition: PAUSED pending program-level audit
