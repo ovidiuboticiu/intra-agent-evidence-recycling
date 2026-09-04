@@ -7,13 +7,16 @@ This index points to the public materials intended for an independent replicatio
 1. [`EXTERNAL_REPLICATION_GUIDE_v1_0.md`](EXTERNAL_REPLICATION_GUIDE_v1_0.md)  
    Full replication scope, prospectivity rules, environment capture requirements, STOP rules, execution procedure, outcome taxonomy, and interpretation boundaries.
 
-2. [`EXTERNAL_REPLICATION_CHECKLIST_v1_0.md`](EXTERNAL_REPLICATION_CHECKLIST_v1_0.md)  
+2. [`EXTERNAL_REPLICATION_VALIDITY_GATES_v1_0.md`](EXTERNAL_REPLICATION_VALIDITY_GATES_v1_0.md)  
+   Exact frozen v0.4.3 validity-gate definitions and co-primary decision thresholds.
+
+3. [`EXTERNAL_REPLICATION_CHECKLIST_v1_0.md`](EXTERNAL_REPLICATION_CHECKLIST_v1_0.md)  
    Compact operational checklist for before, during, and after collection.
 
-3. [`EXTERNAL_REPLICATION_REPORT_TEMPLATE_v1_0.md`](EXTERNAL_REPLICATION_REPORT_TEMPLATE_v1_0.md)  
+4. [`EXTERNAL_REPLICATION_REPORT_TEMPLATE_v1_0.md`](EXTERNAL_REPLICATION_REPORT_TEMPLATE_v1_0.md)  
    Standard report structure for supported replication, valid non-replication, or invalid/inconclusive attempts.
 
-4. [`EXTERNAL_REPLICATION_ENVIRONMENT_TEMPLATE_v1_0.json`](EXTERNAL_REPLICATION_ENVIRONMENT_TEMPLATE_v1_0.json)  
+5. [`EXTERNAL_REPLICATION_ENVIRONMENT_TEMPLATE_v1_0.json`](EXTERNAL_REPLICATION_ENVIRONMENT_TEMPLATE_v1_0.json)  
    Machine-readable environment capture template.
 
 ## Frozen source experiment
