@@ -14,7 +14,7 @@ with:
 
 ## 2. Methodological note pointer
 
-Replace the current preprint-ready pointer from `METHODOLOGICAL_NOTE_PREPRINT_v0_3.md` to:
+Replace the current preprint-ready pointer from `METHODOLOGICAL_NOTE_PREPRINT_v0_3.md` only after the v0.4 manuscript source is present in the repository. The intended target is:
 
 `docs/METHODOLOGICAL_NOTE_PREPRINT_v0_4.md`
 
@@ -22,6 +22,8 @@ Add links to:
 
 - `docs/METHODOLOGICAL_NOTE_CORRECTION_LOG_v0_4.md`
 - `docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md`
+
+Do not create a broken README link if the v0.4 manuscript source has not yet been committed.
 
 ## 3. v0.4.3 gate wording
 
@@ -35,7 +37,7 @@ with:
 
 Then add:
 
-> The v0.4.3 package has strong internal freeze consistency, including stable preregistration/stimuli/rationale hashes embedded in all result rows. A public or independently timestamped copy of the v0.4.3 preregistration artifact before the first behavioral call has not been established. For this reason, new project summaries describe v0.4.3 as pre-specified/frozen rather than publicly preregistered. Later publicly preregistered stages retain their original terminology.
+> The v0.4.3 package has strong internal freeze consistency, including stable preregistration/stimuli/rationale hashes embedded in all result rows. A privately archived preflight screenshot corroborates that the mandatory preflight was completed immediately before confirmatory collection, but it is not a public registration record. A public or independently verifiable pre-collection timestamp of the v0.4.3 preregistration artifact has not been established. For this reason, new project summaries describe v0.4.3 as pre-specified/frozen rather than publicly preregistered. Later publicly preregistered stages retain their original terminology.
 
 ## 4. Strongest supported H1 claim
 
@@ -55,7 +57,7 @@ Then add:
 
 Keep the historical Zenodo title exactly as published, but append:
 
-> **Post-publication clarification:** the historical title is preserved as part of the published record. A later forensic chronology audit found strong evidence of pre-specification/freeze consistency but did not locate an independent/public timestamp of the v0.4.3 preregistration artifact before the first behavioral call. See `docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md`.
+> **Post-publication clarification:** the historical title is preserved as part of the published record. A later forensic chronology audit found strong evidence of pre-specification/freeze consistency and a privately archived preflight screenshot that corroborates the operational sequence, but did not locate a public or independently verifiable pre-collection timestamp of the v0.4.3 preregistration artifact. See `docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md`.
 
 ## 6. Experimental discipline
 
@@ -67,4 +69,4 @@ because later stages such as v0.5.2 and v0.7 do have public preregistration evid
 
 ## 7. Repository structure/current work product
 
-Add the Stage 4 files and change the current methodological-note path to v0.4.
+Add the Stage 4 files. Change the current methodological-note path to v0.4 only after `docs/METHODOLOGICAL_NOTE_PREPRINT_v0_4.md` is actually present, or after the Zenodo DOI is available and the README can point directly to the published record.
