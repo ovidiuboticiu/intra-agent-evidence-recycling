@@ -58,7 +58,7 @@ Recommended relation: **References**
 1. IAER empirical preprint:
    - DOI: `10.5281/zenodo.22282120`
    - Historical title: *When One Source Returns: A Preregistered Behavioral Study of Intra-Agent Evidence Recycling*
-   - Note: the Stage 4 forensic addendum clarifies that a public/independent pre-collection timestamp for the v0.4.3 preregistration artifact itself was not located.
+   - Note: the Stage 4 forensic addendum clarifies that a privately archived preflight screenshot corroborates the operational sequence, but a public or independently verifiable pre-collection timestamp for the v0.4.3 preregistration artifact itself was not located.
 
 2. IAER software/reproducibility archive:
    - DOI: `10.5281/zenodo.22259801`
@@ -70,11 +70,11 @@ Recommended relation: **References**
 
 ## File to upload
 
-`Before_Calling_It_a_Non_Replication_v0_4.pdf`
+`Before_Calling_It_a_Non_Replication_v0_4_FINAL.pdf`
 
 SHA-256:
 
-`56dfb5ea83833f47d8e17dbf7b19f84069c6067fca9be910174134f34bc9b53d`
+`f1bdb42562c6e3f5bbce4d32c8eb08368a4f6669ee213e343d24106a0df07882`
 
 ## Notes
 
@@ -83,5 +83,5 @@ SHA-256:
 - Use manuscript v0.4, not v0.3, for the Zenodo upload.
 - v0.4 incorporates the post-publication forensic validation and does not change H1/H2 numerical results.
 - Do not describe Phi or Ministral as negative replications of IAER; they did not reach an interpretable confirmatory target comparison.
-- Do not describe v0.4.3 as *publicly preregistered before collection* unless additional independent timestamp evidence is located.
+- Do not describe v0.4.3 as *publicly preregistered before collection* unless additional public or independently verifiable pre-collection timestamp evidence is located.
 - After Zenodo assigns the new DOI, add that DOI to the GitHub README and to this metadata file.
