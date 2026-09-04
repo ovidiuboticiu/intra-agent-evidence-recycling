@@ -1,0 +1,63 @@
+{
+  "schema_name": "IAER_EXTERNAL_REPLICATION_ENVIRONMENT_v1_0",
+  "replication_id": "",
+  "replication_type": "Level_B_direct_behavioral_replication",
+  "replicator": {
+    "name_or_team": "",
+    "affiliation": "",
+    "contact": ""
+  },
+  "protocol": {
+    "public_registration_url": "",
+    "public_timestamp_utc": "",
+    "repository_commit_or_tag": "",
+    "protocol_sha256": ""
+  },
+  "collection": {
+    "start_utc": "",
+    "end_utc": "",
+    "planned_valid_trajectories": 168,
+    "stimulus_mode": "original_frozen_stimuli"
+  },
+  "hardware": {
+    "operating_system": "",
+    "cpu": "",
+    "gpu": "",
+    "ram": ""
+  },
+  "runtime": {
+    "application": "LM Studio",
+    "version_or_build": "",
+    "api_base_url": "http://localhost:1234/v1"
+  },
+  "model": {
+    "display_name": "qwen3.5-4b",
+    "artifact_filename": "",
+    "artifact_sha256": "",
+    "quantization_or_precision": "",
+    "context_length": null,
+    "thinking_or_reasoning_setting": "OFF"
+  },
+  "sampling": {
+    "temperature": 0,
+    "top_p": null,
+    "top_k": null,
+    "seed": null,
+    "other_parameters": {}
+  },
+  "frozen_files": {
+    "runner_sha256": "",
+    "analysis_sha256": "",
+    "stimuli_sha256": "",
+    "freeze_manifest_verification": ""
+  },
+  "execution_policy": {
+    "preflight_attempts_allowed": 1,
+    "timeout_seconds": 240,
+    "retry_policy": "frozen_runner_policy",
+    "resume_policy": "same_registered_command_and_configuration",
+    "outcome_sensitive_changes_allowed": false
+  },
+  "deviations_known_before_collection": [],
+  "notes": ""
+}
