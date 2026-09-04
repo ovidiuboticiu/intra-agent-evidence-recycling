@@ -104,14 +104,20 @@ If any item differs from the frozen protocol, describe the deviation before repo
 
 ## 8. Validity gates
 
-Report the frozen gate definitions and observed values.
+Use the exact frozen definitions summarized in `EXTERNAL_REPLICATION_VALIDITY_GATES_v1_0.md`.
 
 | Gate | Frozen requirement | Observed | Pass/Fail |
 | --- | --- | --- | --- |
-| V1 | | | |
-| V2 | | | |
-| V3 | | | |
-| V4 | | | |
+| V1 — source-only counter sensitivity | `source_only`: COUNTER on at least 24/32 items | | |
+| V2 — independent-evidence positive control | `independent_evidence`: retain INITIAL on at least 6/8 items | | |
+| V3 — active trace completeness | all 64 active trajectories contain all five valid application outputs | | |
+| V4 — dataset completeness | all 168 planned item-condition keys present as valid trajectories | | |
+
+Additional exact-key audit:
+
+- Duplicate valid keys:
+- Missing planned keys:
+- Extra/unplanned keys:
 
 Overall validity disposition:
 
