@@ -106,9 +106,9 @@ The provenance probe was exact, which further requires behavioral weighting and 
 
 ## 6. Preregistration / chronology clarification
 
-The v0.4.3 package contains a frozen pre-specification of hypotheses, gates, stimuli, runner, and analysis, and stable package hashes are embedded consistently across all 168 result rows. A timestamped pre-collection screenshot also shows the mandatory behavioral preflight completed immediately before confirmatory collection with `completed_valid=0`.
+The v0.4.3 package contains a frozen pre-specification of hypotheses, gates, stimuli, runner, and analysis, and stable package hashes are embedded consistently across all 168 result rows. A privately archived screenshot preserved in the project workspace shows the mandatory behavioral preflight completed immediately before confirmatory collection with `completed_valid=0`; its platform timestamp predates collection by less than a minute. This is corroborating project evidence, not a public registration record.
 
-However, the forensic chronology audit did not locate a separate public or independently timestamped copy of the v0.4.3 preregistration artifact before the first behavioral call. The earliest public GitHub repository commit occurred after collection had already begun.
+However, the forensic chronology audit did not locate a separate public or independently verifiable pre-collection timestamp of the v0.4.3 preregistration artifact before the first behavioral call. The earliest public GitHub repository commit occurred after collection had already begun.
 
 Accordingly, new project summaries should prefer:
 
