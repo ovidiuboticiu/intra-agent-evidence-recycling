@@ -1,6 +1,12 @@
-# Zenodo Metadata Template — Methodological Note v0.4
+# Zenodo Metadata Record — Methodological Note v0.4
 
-**Status:** ready for separate Zenodo preprint record after Stage 4 review; DOI not yet assigned
+**Status:** published on Zenodo on 2026-09-04
+
+## Publication identifiers
+
+- Version DOI: `10.5281/zenodo.22306245`
+- Concept DOI: `10.5281/zenodo.22306244`
+- Zenodo record: `https://zenodo.org/records/22306245`
 
 ## Title
 
@@ -51,24 +57,26 @@ When a behavioral effect observed in one large language model is absent on anoth
 - forensic validation
 - Intra-Agent Evidence Recycling
 
-## Related identifiers
+## Related works as published
 
-Recommended relation: **References**
+Relation: **References**
 
-1. IAER empirical preprint:
+1. IAER empirical preprint
    - DOI: `10.5281/zenodo.22282120`
+   - Resource type: Preprint
    - Historical title: *When One Source Returns: A Preregistered Behavioral Study of Intra-Agent Evidence Recycling*
    - Note: the Stage 4 forensic addendum clarifies that a privately archived preflight screenshot corroborates the operational sequence, but a public or independently verifiable pre-collection timestamp for the v0.4.3 preregistration artifact itself was not located.
 
-2. IAER software/reproducibility archive:
+2. IAER software/reproducibility archive
    - DOI: `10.5281/zenodo.22259801`
+   - Resource type: Software
    - Title: *Intra-Agent Evidence Recycling v0.4.3 — Behavioral Confirmatory Study*
 
-3. Public project repository:
-   - `https://github.com/ovidiuboticiu/intra-agent-evidence-recycling`
-   - Relation: References / Is supplemented by repository materials (use the closest available Zenodo relation label)
+## Repository URL as published
 
-## File to upload
+`https://github.com/ovidiuboticiu/intra-agent-evidence-recycling`
+
+## Published file
 
 `Before_Calling_It_a_Non_Replication_v0_4_FINAL.pdf`
 
@@ -76,12 +84,11 @@ SHA-256:
 
 `f1bdb42562c6e3f5bbce4d32c8eb08368a4f6669ee213e343d24106a0df07882`
 
-## Notes
+## Publication notes
 
-- Publish this as a **new Zenodo record**, not as a new version of DOI `10.5281/zenodo.22282120`.
+- This was published as a **new Zenodo record**, not as a new version of DOI `10.5281/zenodo.22282120`.
 - The methodological note asks a different scientific question from the original IAER empirical preprint.
-- Use manuscript v0.4, not v0.3, for the Zenodo upload.
 - v0.4 incorporates the post-publication forensic validation and does not change H1/H2 numerical results.
-- Do not describe Phi or Ministral as negative replications of IAER; they did not reach an interpretable confirmatory target comparison.
-- Do not describe v0.4.3 as *publicly preregistered before collection* unless additional public or independently verifiable pre-collection timestamp evidence is located.
-- After Zenodo assigns the new DOI, add that DOI to the GitHub README and to this metadata file.
+- Phi and Ministral are not described as negative replications of IAER because they did not reach an interpretable confirmatory target comparison.
+- v0.4.3 is not described in new text as *publicly preregistered before collection* unless additional public or independently verifiable pre-collection timestamp evidence is located.
+- The historical empirical preprint title is preserved as published; the later forensic addendum supplies the clarification rather than silently rewriting the historical record.
