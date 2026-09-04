@@ -15,7 +15,7 @@ Use this checklist before, during, and after an external replication.
 - [ ] Decide original versus fresh isomorphic stimuli.
 - [ ] Freeze sample size.
 - [ ] Freeze H1/H2 decision rules.
-- [ ] Freeze validity gates.
+- [ ] Freeze the exact V1-V4 validity gates.
 - [ ] Freeze retry/timeout/resume policy.
 - [ ] Freeze planned exclusions.
 - [ ] Compute hashes for runner, analysis, stimuli, and protocol.
@@ -43,13 +43,15 @@ Use this checklist before, during, and after an external replication.
 - [ ] If resumed, use the registered resume policy and document the interruption.
 - [ ] Target the planned 168 valid trajectories for a faithful full v0.4.3 replication.
 
-## Before interpretation
+## Before interpretation — exact validity gates
 
-- [ ] Audit expected versus observed keys.
-- [ ] Check duplicates.
-- [ ] Check missing planned rows.
-- [ ] Check extra/unplanned rows.
-- [ ] Check all validity gates.
+- [ ] V1: `source_only` chooses COUNTER on at least 24/32 items.
+- [ ] V2: `independent_evidence` retains INITIAL on at least 6/8 positive-control items.
+- [ ] V3: all 64 active trajectories contain all five valid application outputs.
+- [ ] V4: all 168 planned item-condition keys are present as valid trajectories.
+- [ ] Audit duplicate valid keys.
+- [ ] Audit missing planned keys.
+- [ ] Audit extra/unplanned keys.
 - [ ] If any mandatory gate fails, do not interpret H1/H2 as replication/non-replication.
 - [ ] Run the registered analysis only after collection integrity is established.
 
