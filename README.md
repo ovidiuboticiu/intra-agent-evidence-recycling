@@ -24,7 +24,7 @@ Behavioral resistance to counterevidence is not treated as proof that the model 
 
 **Project disposition: PAUSED — instrument redesign path exhausted under v0.7.**
 
-No v0.8 behavioral run is currently authorized or recommended. The experimental program has completed its v0.2–v0.7 scientific audit. Current work is limited to synthesis and publication of the preserved results; no new behavioral collection is part of the methodological note.
+No v0.8 behavioral run is currently authorized or recommended. The experimental program has completed its v0.2–v0.7 scientific audit. Current work is limited to synthesis, publication, external-replication preparation, and preservation of the audit trail; no new behavioral collection is currently authorized.
 
 | Version | Role | Status |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ No v0.8 behavioral run is currently authorized or recommended. The experimental 
 | v0.3.1 | Calibration / discovery pilot | Completed; exploratory |
 | v0.4.1 | First confirmatory attempt | **Aborted** — manipulation validity failure |
 | v0.4.2 | Second confirmatory attempt | **Aborted before data collection** — provenance preflight failure |
-| v0.4.3 | Behavioral-confirmatory study | **Completed and independently audited; H1 supported, H2 not supported** |
+| v0.4.3 | Behavioral-confirmatory study | **Completed; post-run integrity audit and separate recomputation performed; H1 supported, H2 not supported** |
 | v0.5.0 | Phi-4-mini-instruct cross-family qualification | **Invalid/inconclusive** — mandatory preflight failed |
 | v0.5.1 | Exploratory response-interface diagnostic | **Completed; exploratory only** |
 | v0.5.2 | Phi-4-mini-reasoning eligibility pilot | **Valid but INELIGIBLE** |
@@ -41,13 +41,17 @@ No v0.8 behavioral run is currently authorized or recommended. The experimental 
 
 See [`docs/experiment_history.md`](docs/experiment_history.md) for the full audit trail and [`docs/program_audit_v0_2_to_v0_7.md`](docs/program_audit_v0_2_to_v0_7.md) for the program-level scientific assessment.
 
-## Methodological note: cross-family instrument qualification
+## Published methodological note: cross-family instrument qualification
 
-A separate methodological/negative-results manuscript synthesizes v0.5.0–v0.7 without changing the inferential status of the v0.4.3 confirmatory result.
+The methodological/negative-results note synthesizing v0.5.0–v0.7 is now published as a separate Zenodo preprint. It introduces no new behavioral observations and does not change the numerical H1/H2 results from v0.4.3.
 
-Current preprint-ready manuscript:
+> Boticiu, Ovidiu. (2026). *Before Calling It a Non-Replication: Instrument Qualification Across LLM Families* (Version v0.4) [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.22306245
 
-- [`docs/METHODOLOGICAL_NOTE_PREPRINT_v0_3.md`](docs/METHODOLOGICAL_NOTE_PREPRINT_v0_3.md) — **Before Calling It a Non-Replication: Instrument Qualification Across LLM Families**
+- Published preprint DOI: [10.5281/zenodo.22306245](https://doi.org/10.5281/zenodo.22306245)
+- [`docs/METHODOLOGICAL_NOTE_PREPRINT_v0_4.md`](docs/METHODOLOGICAL_NOTE_PREPRINT_v0_4.md) — repository manuscript corresponding to the published v0.4 note
+- [`docs/METHODOLOGICAL_NOTE_PUBLICATION_RECORD_v0_4.md`](docs/METHODOLOGICAL_NOTE_PUBLICATION_RECORD_v0_4.md) — publication identifiers and file hash
+- [`docs/METHODOLOGICAL_NOTE_CORRECTION_LOG_v0_4.md`](docs/METHODOLOGICAL_NOTE_CORRECTION_LOG_v0_4.md) — correction/transparency log from v0.3 to v0.4
+- [`docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md`](docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md) — post-publication no-new-data forensic validation of the v0.4.3 target
 - [`docs/METHODOLOGICAL_NOTE_FACTUAL_CITATION_AUDIT_v0_3.md`](docs/METHODOLOGICAL_NOTE_FACTUAL_CITATION_AUDIT_v0_3.md) — factual/citation audit
 - [`docs/METHODOLOGICAL_NOTE_PRIOR_ART_GATE_v0_1.md`](docs/METHODOLOGICAL_NOTE_PRIOR_ART_GATE_v0_1.md) — prior-art/novelty gate
 - [`docs/METHODOLOGICAL_NOTE_REVIEWER_AUDIT_v0_1.md`](docs/METHODOLOGICAL_NOTE_REVIEWER_AUDIT_v0_1.md) — reviewer-style audit that motivated the narrowed framing
@@ -58,20 +62,24 @@ The methodological note does **not** claim priority for repeated/dependent-evide
 
 v0.4.3 is the only version included in confirmatory IAER inference.
 
-All **168/168** planned trajectories were valid and all four preregistered validity gates passed.
+All **168/168** planned trajectories were valid and all four frozen pre-specified validity gates passed.
 
 | Hypothesis | Retention | Paired RD | Holm-adjusted p | Verdict |
 | --- | ---: | ---: | ---: | --- |
 | H1: `passive_repeat > neutral_filler` | 22/32 vs 0/32 | 0.6875 | 9.5367e-7 | **Supported** |
 | H2: `active_plain > active_lineage` | 2/32 vs 0/32 | 0.0625 | 0.50 | **Not supported** |
 
-The provenance audit was exact for 168/168 trajectories, but remained descriptive/exploratory as preregistered. It does not establish a confirmed provenance-use mechanism.
+The provenance audit was exact for 168/168 trajectories, but remained descriptive/exploratory under the frozen pre-specification. It does not establish a confirmed provenance-use mechanism.
 
-The strongest supported claim is therefore deliberately narrow:
+The strongest supported claim is deliberately narrow:
 
-> Under the frozen v0.4.3 task family and `qwen3.5-4b` configuration, five explicitly derivative reviews of one initial source substantially increased retention of the initial claim relative to an equal-sized unrelated-memory control.
+> Under the frozen v0.4.3 task family and `qwen3.5-4b` configuration, five explicitly derivative, target-consistent reviews of one initial source substantially increased retention of the initial claim relative to an equal-count control containing five unrelated memory records.
 
-The complete frozen materials and audit are in [`experiments/v0_4_3`](experiments/v0_4_3).
+Post-publication forensic validation independently reconstructed the planned keys, recomputed the behavioral outcomes directly from the raw final choices, reproduced H1/H2 exactly, and found no material data or statistical error. All 22 H1-discordant pairs passed pair-level structural audit. However, H1 does not isolate derivative dependence from lexical repetition, target-consistent salience, explicit root references, and prompt length; literal independent-source counting is therefore **not established**.
+
+The v0.4.3 package has strong internal freeze consistency, including stable preregistration/stimuli/rationale hashes embedded across the result rows. A privately archived preflight screenshot corroborates the operational sequence immediately before collection, but a public or independently verifiable pre-collection timestamp of the v0.4.3 preregistration artifact itself was not located. New project summaries therefore describe v0.4.3 as **pre-specified/frozen** rather than as publicly preregistered before collection. Later stages with public preregistration evidence retain their original terminology.
+
+The complete frozen materials and original audit are in [`experiments/v0_4_3`](experiments/v0_4_3). The later clarification is in [`docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md`](docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md).
 
 ## Cross-family qualification after v0.4.3
 
@@ -147,16 +155,19 @@ No rescue run is permitted under v0.7.
 - [v0.7 results release](https://github.com/ovidiuboticiu/intra-agent-evidence-recycling/releases/tag/v0.7-instrument-results)
 - [`experiments/v0_7_instrument_redesign/V0_7_CLOSURE_REPORT.md`](experiments/v0_7_instrument_redesign/V0_7_CLOSURE_REPORT.md)
 
-## Preprint and reproducibility archive
+## Published records and reproducibility archive
 
-The citation-locked v0.4.3 manuscript is published as a public, non-peer-reviewed preprint:
+The historical v0.4.3 empirical manuscript remains published as a public, non-peer-reviewed preprint under its original title:
 
 > Boticiu, Ovidiu. (2026). *When One Source Returns: A Preregistered Behavioral Study of Intra-Agent Evidence Recycling* (Version 0.4) [Preprint]. Zenodo.
 
-- Preprint DOI: [10.5281/zenodo.22282120](https://doi.org/10.5281/zenodo.22282120)
+- Historical empirical preprint DOI: [10.5281/zenodo.22282120](https://doi.org/10.5281/zenodo.22282120)
 - v0.4.3 reproducibility archive: [10.5281/zenodo.22259801](https://doi.org/10.5281/zenodo.22259801)
+- Methodological note DOI: [10.5281/zenodo.22306245](https://doi.org/10.5281/zenodo.22306245)
 
-Later v0.5-v0.7 qualification/redesign results do not alter the inferential status of that preprint.
+**Post-publication clarification:** the historical empirical title is preserved rather than silently rewritten. The later forensic chronology audit found strong evidence of pre-specification/freeze consistency but did not locate a public or independently verifiable pre-collection timestamp of the v0.4.3 preregistration artifact. See [`docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md`](docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md).
+
+Later v0.5-v0.7 qualification/redesign results do not provide a valid cross-family confirmatory IAER estimate.
 
 ## Experimental discipline
 
@@ -192,6 +203,10 @@ intra-agent-evidence-recycling/
 │   ├── experiment_history.md
 │   ├── program_audit_v0_2_to_v0_7.md
 │   ├── METHODOLOGICAL_NOTE_PREPRINT_v0_3.md
+│   ├── METHODOLOGICAL_NOTE_PREPRINT_v0_4.md
+│   ├── METHODOLOGICAL_NOTE_PUBLICATION_RECORD_v0_4.md
+│   ├── METHODOLOGICAL_NOTE_CORRECTION_LOG_v0_4.md
+│   ├── V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md
 │   ├── METHODOLOGICAL_NOTE_FACTUAL_CITATION_AUDIT_v0_3.md
 │   ├── METHODOLOGICAL_NOTE_PRIOR_ART_GATE_v0_1.md
 │   └── METHODOLOGICAL_NOTE_REVIEWER_AUDIT_v0_1.md
@@ -211,23 +226,27 @@ intra-agent-evidence-recycling/
 
 **PAUSED.**
 
-The v0.4.3 H1 effect remains a valid, configuration-specific confirmatory finding. Cross-family generalization remains unresolved because later model families did not reach a valid confirmatory IAER comparison.
+The v0.4.3 H1 effect remains a configuration-specific behavioral finding under the frozen v0.4.3 decision rule. Cross-family generalization remains unresolved because later model families did not reach a valid confirmatory IAER comparison.
 
 The v0.7 stop rule has been reached. The project should not proceed directly to v0.8 by changing prompts or testing more models until one passes. A future experimental restart requires a materially new measurement idea satisfying the restart criteria in [`docs/program_audit_v0_2_to_v0_7.md`](docs/program_audit_v0_2_to_v0_7.md).
 
-The current non-experimental work product is the methodological note in [`docs/METHODOLOGICAL_NOTE_PREPRINT_v0_3.md`](docs/METHODOLOGICAL_NOTE_PREPRINT_v0_3.md).
+The current non-experimental publication is the methodological note v0.4: [10.5281/zenodo.22306245](https://doi.org/10.5281/zenodo.22306245). A high-value next step is independent external replication of v0.4.3 using the preserved frozen materials, before any new IAER behavioral generation is launched.
 
 ## Citation
 
-Citation metadata is provided in [`CITATION.cff`](CITATION.cff).
+Citation metadata for the empirical/software record is provided in [`CITATION.cff`](CITATION.cff).
 
-Preferred manuscript citation:
+Historical empirical preprint:
 
 > Boticiu, Ovidiu. (2026). *When One Source Returns: A Preregistered Behavioral Study of Intra-Agent Evidence Recycling* (Version 0.4) [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.22282120
 
 Software and reproducibility archive:
 
 > Boticiu, Ovidiu. (2026). *Intra-Agent Evidence Recycling v0.4.3 — Behavioral Confirmatory Study* (Version 0.4.3) [Software]. Zenodo. https://doi.org/10.5281/zenodo.22259801
+
+Methodological note:
+
+> Boticiu, Ovidiu. (2026). *Before Calling It a Non-Replication: Instrument Qualification Across LLM Families* (Version v0.4) [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.22306245
 
 ## License
 
