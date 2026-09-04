@@ -11,9 +11,13 @@ doi: "10.5281/zenodo.22259801"
 repository-code: "https://github.com/ovidiuboticiu/intra-agent-evidence-recycling"
 url: "https://doi.org/10.5281/zenodo.22259801"
 abstract: >-
-  A preregistered behavioral study of whether repeated memory records derived
-  from one external source acquire excess evidential weight in a local LLM
-  agent, and whether explicit lineage metadata mitigates that effect.
+  A pre-specified and frozen behavioral study of whether repeated memory records
+  derived from one external source acquire excess behavioral weight in a local
+  LLM agent, and whether explicit lineage metadata mitigates that effect. Later
+  forensic validation reproduced the numerical H1/H2 results but did not locate
+  a public or independently verifiable pre-collection timestamp for the v0.4.3
+  preregistration artifact; the historical published preprint title is preserved
+  unchanged below.
 keywords:
   - LLM agents
   - agent memory
