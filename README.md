@@ -20,6 +20,14 @@ The project separates three kinds of claims:
 
 Behavioral resistance to counterevidence is not treated as proof that the model internally counts repeated records as independent sources.
 
+## AI assistance disclosure
+
+IAER is **human-led and AI-assisted**. The original research topic, initial scientific question, and decision to pursue this line of investigation were proposed by **Ovidiu Boticiu**. ChatGPT (OpenAI) was subsequently used for methodological discussion and critique, structuring alternatives, protocol-development assistance, coding and code review, statistical and logical checks, documentation, manuscript drafting/editing, and methodological audit support.
+
+Final experimental and methodological decisions, authorization and execution of runs, interpretation of results, publication decisions, and scientific responsibility remained with the human author. Experimental observations and numerical results derive from the executed protocols and model outputs, not from ChatGPT-generated claims or simulated data.
+
+See [`AI_USE.md`](AI_USE.md) for the full contribution and AI-use disclosure.
+
 ## Current status
 
 **Project disposition: PAUSED — instrument redesign path exhausted under v0.7.**
@@ -34,7 +42,7 @@ No v0.8 behavioral run is currently authorized or recommended. The experimental 
 | v0.4.2 | Second confirmatory attempt | **Aborted before data collection** — provenance preflight failure |
 | v0.4.3 | Behavioral-confirmatory study | **Completed; post-run integrity audit and separate recomputation performed; H1 supported, H2 not supported** |
 | v0.5.0 | Phi-4-mini-instruct cross-family qualification | **Invalid/inconclusive** — mandatory preflight failed |
-| v0.5.1 | Exploratory response-interface diagnostic | **Completed; exploratory only** |
+| v0.5.1 | Exploratory response-interface diagnostic | Completed; exploratory |
 | v0.5.2 | Phi-4-mini-reasoning eligibility pilot | **Valid but INELIGIBLE** |
 | v0.6 | Ministral staged Calibration → Eligibility → Confirmatory program | **CLOSED — CALIBRATION_FAILURE; STOP BEFORE ELIGIBILITY** |
 | v0.7 | Ministral measurement-decoupling instrument redesign | **CLOSED — REDESIGN_FAILED_STOP; project PAUSED** |
@@ -196,6 +204,7 @@ v0.5.x used Microsoft Phi-4-mini variants. v0.6 and v0.7 used Ministral-3-8B-Ins
 ```text
 intra-agent-evidence-recycling/
 ├── README.md
+├── AI_USE.md
 ├── CITATION.cff
 ├── LICENSE-CODE
 ├── LICENSE-DATA-DOCS.md
