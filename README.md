@@ -42,7 +42,7 @@ No v0.8 behavioral run is currently authorized or recommended. The experimental 
 | v0.4.2 | Second confirmatory attempt | **Aborted before data collection** — provenance preflight failure |
 | v0.4.3 | Behavioral-confirmatory study | **Completed; post-run integrity audit and separate recomputation performed; H1 supported, H2 not supported** |
 | v0.5.0 | Phi-4-mini-instruct cross-family qualification | **Invalid/inconclusive** — mandatory preflight failed |
-| v0.5.1 | Exploratory response-interface diagnostic | Completed; exploratory |
+| v0.5.1 | Exploratory response-interface diagnostic | **Completed; exploratory only** |
 | v0.5.2 | Phi-4-mini-reasoning eligibility pilot | **Valid but INELIGIBLE** |
 | v0.6 | Ministral staged Calibration → Eligibility → Confirmatory program | **CLOSED — CALIBRATION_FAILURE; STOP BEFORE ELIGIBILITY** |
 | v0.7 | Ministral measurement-decoupling instrument redesign | **CLOSED — REDESIGN_FAILED_STOP; project PAUSED** |
