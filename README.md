@@ -49,8 +49,8 @@ This correction does not change the frozen v0.4.3 data, H1/H2 numerical results,
 - [`docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md`](docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md)
 - [`docs/IAER_PRIOR_ART_REASSESSMENT_2026-09-28.md`](docs/IAER_PRIOR_ART_REASSESSMENT_2026-09-28.md)
 - [`docs/POST_PUBLICATION_CORRECTION_RECORD_2026-09-28.md`](docs/POST_PUBLICATION_CORRECTION_RECORD_2026-09-28.md) — canonical summary of what changed and what remains unchanged
-- [`docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md`](docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md) — draft for a future corrected Zenodo version; not yet published
-- [`docs/ZENODO_CORRECTED_VERSION_CHECKLIST_2026-09-28.md`](docs/ZENODO_CORRECTED_VERSION_CHECKLIST_2026-09-28.md) — remaining manual publication steps
+- [`docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md`](docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md) — corrected manuscript draft preserved in the repository; no new Zenodo version is currently planned
+- [`docs/ZENODO_CORRECTED_VERSION_CHECKLIST_2026-09-28.md`](docs/ZENODO_CORRECTED_VERSION_CHECKLIST_2026-09-28.md) — minimal Zenodo metadata-correction checklist; no new-version publication is currently planned
 
 ## Current status
 
@@ -290,7 +290,7 @@ The current non-experimental publication is the methodological note v0.4: [10.52
 
 ## Citation
 
-Citation metadata is provided in [`CITATION.cff`](CITATION.cff). Until the corrected empirical preprint is published on Zenodo, the preferred citation points to the v0.4.3 software/reproducibility archive rather than recommending the historically superseded v0.4 preprint.
+Citation metadata is provided in [`CITATION.cff`](CITATION.cff). Because no corrected Zenodo preprint version is currently planned, the preferred citation points to the v0.4.3 software/reproducibility archive rather than recommending the historically superseded v0.4 preprint.
 
 Historical empirical preprint:
 

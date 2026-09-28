@@ -1,53 +1,42 @@
-# Zenodo Corrected-Version Checklist — IAER
+# Zenodo Metadata-Correction Checklist — IAER
 
 **Date prepared:** 2026-09-28  
-**Status:** PENDING MANUAL ZENODO PUBLICATION
+**Status:** PENDING MANUAL METADATA UPDATE  
+**Publication plan:** no new Zenodo preprint version is currently planned.
 
-This checklist begins only after the GitHub correction record is merged and stable.
+## Goal
 
-## Before opening Zenodo
+Make the historical Zenodo record self-correcting for readers who land there directly, without replacing the historical PDF and without creating a new publication version.
 
-- [ ] Confirm `main` contains:
-  - [ ] `docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md`
-  - [ ] `docs/IAER_PRIOR_ART_REASSESSMENT_2026-09-28.md`
-  - [ ] `docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md`
-  - [ ] `docs/POST_PUBLICATION_CORRECTION_RECORD_2026-09-28.md`
-- [ ] Generate final DOCX/PDF from the corrected draft.
-- [ ] Perform one final citation, number, title, DOI, and formatting audit on the actual PDF.
-- [ ] Confirm the historical v0.4 PDF remains unchanged.
+Historical empirical preprint:
 
-## Zenodo publication
+- DOI: `10.5281/zenodo.22282120`
+- title: *When One Source Returns: A Preregistered Behavioral Study of Intra-Agent Evidence Recycling*
+- Version 0.4
 
-- [ ] Open the historical empirical-preprint record/concept.
-- [ ] Create **New version** rather than silently replacing the historical PDF.
-- [ ] Upload the audited corrected PDF.
-- [ ] Use the corrected title:
-  - *When One Source Returns: A Pre-Specified Behavioral Study of Intra-Agent Evidence Recycling*
-- [ ] Describe the version explicitly as a post-publication corrected version.
-- [ ] State that the historical priority claim is withdrawn.
-- [ ] State that v0.4.3 is described as pre-specified/frozen rather than publicly preregistered before collection.
-- [ ] State that numerical v0.4.3 results are unchanged.
-- [ ] State that the 2026-09-27 Level B same-project direct-configuration replication is included.
-- [ ] Publish the new version.
+## Minimal Zenodo action
 
-## After Zenodo publication
+- [ ] Open the historical record while signed in to Zenodo.
+- [ ] Choose the option to edit the record metadata.
+- [ ] Do **not** replace or delete the historical PDF.
+- [ ] Do **not** create a new version unless a future publication decision explicitly changes.
+- [ ] Add the following note prominently to the description/metadata:
 
-- [ ] Record the new version DOI and concept/version metadata.
-- [ ] Update `CITATION.cff` to make the corrected preprint the preferred manuscript citation.
-- [ ] Update README historical/publication section with the new DOI.
-- [ ] Update `EXTERNAL_REPLICATION.md` persistent records section.
-- [ ] Add a GitHub publication record containing:
-  - [ ] new DOI;
-  - [ ] publication timestamp;
-  - [ ] final PDF SHA-256;
-  - [ ] title/version;
-  - [ ] relationship to historical v0.4.
-- [ ] Commit the post-Zenodo metadata update separately from the scientific correction itself.
+> **Post-publication correction — 28 September 2026:** The historical priority claim stating that this was, “to our knowledge, the first preregistered controlled test of that complete operational combination,” has been withdrawn following a broader prior-art reassessment. IAER v0.4.3 is now described as **pre-specified and frozen before collection**; a public or independently verifiable pre-collection timestamp of the preregistration artifact was not located. The original v0.4.3 numerical results are unchanged. A 2026-09-27 same-project Level B direct-configuration replication reproduced H1 under the frozen protocol. Full correction record: https://github.com/ovidiuboticiu/intra-agent-evidence-recycling/blob/main/docs/POST_PUBLICATION_CORRECTION_RECORD_2026-09-28.md
+
+- [ ] Save/publish the metadata edit.
+- [ ] Verify from the public Zenodo page that the correction note is visible.
+
+## After the metadata edit
+
+- [ ] Record the date/time of the Zenodo metadata update in GitHub issue #8.
+- [ ] Add the final public Zenodo state to the GitHub correction record if needed.
+- [ ] Close issue #8.
 
 ## Do not do
 
-- Do not delete or overwrite the historical Version 0.4 record.
-- Do not remove the historical "preregistered" title from archival citations to Version 0.4.
-- Do not change frozen v0.4.3 experiment files.
-- Do not describe the Level B replication as independent-lab or cross-family.
+- Do not delete or overwrite the historical Version 0.4 PDF.
+- Do not change the historical title solely to hide the original wording.
 - Do not restore a "first" or equivalent priority claim.
+- Do not describe the Level B replication as independent-lab or cross-family.
+- Do not create a new Zenodo version merely for cosmetic consistency if scientific publication is not an objective.
