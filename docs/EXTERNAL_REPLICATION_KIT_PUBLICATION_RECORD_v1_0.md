@@ -55,3 +55,23 @@ The full forensic clarification is preserved in:
 ## Final disposition
 
 The IAER experimental program remains `PAUSED` after v0.7. No v0.8 behavioral run is authorized. The project is now preserved for external reproduction/replication, methodological inspection, and future restart only under a materially new measurement design.
+
+
+## Post-publication status update — 2026-09-28
+
+A Level B direct behavioral replication was completed on 2026-09-27 and archived under:
+
+`iaer-v0.4.3-level-b-replication-20260927`
+
+Results:
+
+- 168/168 planned keys valid;
+- V1–V4 passed;
+- H1: 24/32 vs 0/32; RD = 0.75; Holm-adjusted p = 2.38419e-7 — **SUPPORTED**;
+- H2: 3/32 vs 0/32; RD = 0.09375; p = 0.25 — **NOT SUPPORTED**.
+
+The release body uses the phrase "Completed external replication" as historical wording. The current classification is narrower: **Level B direct-configuration replication conducted within the same project**. It is not an independent-lab replication, not cross-family, and not bit-for-bit runtime reproduction because the historical original GGUF artifact was not hash-pinned.
+
+Independent Level C implementation replication and Level D conceptual/cross-family replication remain open.
+
+The historical empirical preprint's priority claim was subsequently withdrawn. See `IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md` and `IAER_PRIOR_ART_REASSESSMENT_2026-09-28.md`.
