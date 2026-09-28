@@ -36,6 +36,20 @@ Corrections are dated and versioned; historical artifacts remain preserved; empi
 
 See [`docs/SCIENTIFIC_INTEGRITY_PRINCIPLE.md`](docs/SCIENTIFIC_INTEGRITY_PRINCIPLE.md) for the project-level rule.
 
+## Post-publication priority-claim correction
+
+The historical empirical preprint (Version 0.4, DOI `10.5281/zenodo.22282120`) contained a bounded priority statement describing IAER as, "to our knowledge," the first preregistered controlled test of the complete operational combination used in v0.4.3.
+
+**That priority claim is now withdrawn.**
+
+A broader post-publication prior-art reassessment found that the original literature basis was insufficient for a priority claim: some materially close work had not been identified before publication, while some close work already cited in Version 0.4 was not weighted conservatively enough when the "first" wording was formulated. The withdrawal does **not** assert that an earlier paper has been shown to implement the complete IAER v0.4.3 protocol identically. It means the evidential basis is no longer considered sufficient for a responsible "first" claim.
+
+This correction does not change the frozen v0.4.3 data, H1/H2 numerical results, or the later direct-configuration replication.
+
+- [`docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md`](docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md)
+- [`docs/IAER_PRIOR_ART_REASSESSMENT_2026-09-28.md`](docs/IAER_PRIOR_ART_REASSESSMENT_2026-09-28.md)
+- [`docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md`](docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md) — draft for a future corrected Zenodo version; not yet published
+
 ## Current status
 
 **Project disposition: PAUSED — instrument redesign path exhausted under v0.7.**
@@ -74,9 +88,9 @@ The methodological/negative-results note synthesizing v0.5.0–v0.7 is now publi
 
 The methodological note does **not** claim priority for repeated/dependent-evidence effects or for construct-validity arguments in LLM evaluation. Its contribution is the preserved longitudinal case study showing why qualification failure should not be mislabeled as a cross-family non-replication.
 
-## Only completed confirmatory IAER result: v0.4.3
+## Original confirmatory IAER study: v0.4.3
 
-v0.4.3 is the only version included in confirmatory IAER inference.
+v0.4.3 is the original confirmatory IAER study. The later 2026-09-27 Level B collection is reported separately below as a direct same-configuration-class replication of the frozen protocol.
 
 All **168/168** planned trajectories were valid and all four frozen pre-specified validity gates passed.
 
@@ -96,6 +110,21 @@ Post-publication forensic validation independently reconstructed the planned key
 The v0.4.3 package has strong internal freeze consistency, including stable preregistration/stimuli/rationale hashes embedded across the result rows. A privately archived preflight screenshot corroborates the operational sequence immediately before collection, but a public or independently verifiable pre-collection timestamp of the v0.4.3 preregistration artifact itself was not located. New project summaries therefore describe v0.4.3 as **pre-specified/frozen** rather than as publicly preregistered before collection. Later stages with public preregistration evidence retain their original terminology.
 
 The complete frozen materials and original audit are in [`experiments/v0_4_3`](experiments/v0_4_3). The later clarification is in [`docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md`](docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md).
+
+## 2026-09-27 Level B direct-configuration replication
+
+A fresh same-configuration/direct-configuration replication of the frozen v0.4.3 experiment was completed and archived. It is **not** an independent-lab or cross-family replication.
+
+All **168/168** planned keys were valid, with no duplicates, failures, or target-trajectory transport retries. V1–V4 passed.
+
+| Hypothesis | Replication retention | Paired RD | 95% CI | Holm-adjusted p | Verdict |
+| --- | ---: | ---: | ---: | ---: | --- |
+| H1: `passive_repeat > neutral_filler` | 24/32 vs 0/32 | 0.75 | [0.59375, 0.90625] | 2.38419e-7 | **Supported** |
+| H2: `active_plain > active_lineage` | 3/32 vs 0/32 | 0.09375 | [0, 0.21875] | 0.25 | **Not supported** |
+
+This moves H1 from a single successful collection to a **narrow behavioral effect reproduced in the same direct-configuration class under the frozen v0.4.3 protocol**. The historical original GGUF artifact was not hash-pinned, so this is not claimed as bit-for-bit runtime reproduction. It does not establish cross-family generalization, architecture-independent IAER, or a literal source-counting mechanism.
+
+Archived release: [`iaer-v0.4.3-level-b-replication-20260927`](https://github.com/ovidiuboticiu/intra-agent-evidence-recycling/releases/tag/iaer-v0.4.3-level-b-replication-20260927)
 
 ## Cross-family qualification after v0.4.3
 
@@ -181,9 +210,9 @@ The historical v0.4.3 empirical manuscript remains published as a public, non-pe
 - v0.4.3 reproducibility archive: [10.5281/zenodo.22259801](https://doi.org/10.5281/zenodo.22259801)
 - Methodological note DOI: [10.5281/zenodo.22306245](https://doi.org/10.5281/zenodo.22306245)
 
-**Post-publication clarification:** the historical empirical title is preserved rather than silently rewritten. The later forensic chronology audit found strong evidence of pre-specification/freeze consistency but did not locate a public or independently verifiable pre-collection timestamp of the v0.4.3 preregistration artifact. See [`docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md`](docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md).
+**Post-publication correction:** the historical empirical title and Version 0.4 artifact are preserved rather than silently rewritten. The later forensic chronology audit found strong evidence of pre-specification/freeze consistency but did not locate a public or independently verifiable pre-collection timestamp of the v0.4.3 preregistration artifact. A later prior-art reassessment also found that the evidence base for the historical "first preregistered controlled test" priority wording was insufficient. That priority claim is therefore **withdrawn**. See [`docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md`](docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md) and [`docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md`](docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md).
 
-Later v0.5-v0.7 qualification/redesign results do not provide a valid cross-family confirmatory IAER estimate.
+Later v0.5-v0.7 qualification/redesign results do not provide a valid cross-family confirmatory IAER estimate. The 2026-09-27 Level B run is a same-configuration direct replication, not a cross-family estimate.
 
 ## Experimental discipline
 
@@ -218,6 +247,9 @@ intra-agent-evidence-recycling/
 ├── LICENSE-DATA-DOCS.md
 ├── docs/
 │   ├── SCIENTIFIC_INTEGRITY_PRINCIPLE.md
+│   ├── IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md
+│   ├── IAER_PRIOR_ART_REASSESSMENT_2026-09-28.md
+│   ├── IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md
 │   ├── experiment_history.md
 │   ├── program_audit_v0_2_to_v0_7.md
 │   ├── METHODOLOGICAL_NOTE_PREPRINT_v0_3.md
@@ -248,7 +280,7 @@ The v0.4.3 H1 effect remains a configuration-specific behavioral finding under t
 
 The v0.7 stop rule has been reached. The project should not proceed directly to v0.8 by changing prompts or testing more models until one passes. A future experimental restart requires a materially new measurement idea satisfying the restart criteria in [`docs/program_audit_v0_2_to_v0_7.md`](docs/program_audit_v0_2_to_v0_7.md).
 
-The current non-experimental publication is the methodological note v0.4: [10.5281/zenodo.22306245](https://doi.org/10.5281/zenodo.22306245). A high-value next step is independent external replication of v0.4.3 using the preserved frozen materials, before any new IAER behavioral generation is launched.
+The current non-experimental publication is the methodological note v0.4: [10.5281/zenodo.22306245](https://doi.org/10.5281/zenodo.22306245). A same-configuration Level B replication of v0.4.3 has now been completed and archived. Independent external/lab replication remains desirable. No new IAER behavioral generation is authorized by the documentation correction work.
 
 ## Citation
 
