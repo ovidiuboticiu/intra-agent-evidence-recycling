@@ -78,7 +78,7 @@ This motivated v0.4.3, where provenance remained measured but was no longer a be
 
 **Status:** COMPLETED — VALID DATASET; H1 SUPPORTED; H2 NOT SUPPORTED
 
-v0.4.3 used 32 new balanced fictional items, fixed-N stopping, paired risk differences, exact paired McNemar tests, Holm correction across H1/H2, and four preregistered validity gates.
+v0.4.3 used 32 new balanced fictional items, fixed-N stopping, paired risk differences, exact paired McNemar tests, Holm correction across H1/H2, and four frozen pre-specified validity gates. A later chronology audit found strong internal freeze consistency but did not locate a public or independently verifiable pre-collection timestamp for the preregistration artifact itself.
 
 ## Integrity
 
@@ -95,15 +95,42 @@ v0.4.3 used 32 new balanced fictional items, fixed-N stopping, paired risk diffe
 | H1 `passive_repeat > neutral_filler` | 22/32 vs 0/32 | 0.6875 | 9.5367432e-7 | **Supported** |
 | H2 `active_plain > active_lineage` | 2/32 vs 0/32 | 0.0625 | 0.50 | **Not supported** |
 
-The provenance audit was exact for 168/168 trajectories but was preregistered as descriptive/exploratory. It cannot rescue H2 or establish an internal provenance-use mechanism.
+The provenance audit was exact for 168/168 trajectories but was pre-specified as descriptive/exploratory. It cannot rescue H2 or establish an internal provenance-use mechanism.
 
 ## Supported claim
 
-Under the frozen v0.4.3 task family and `qwen3.5-4b` configuration, five explicitly derivative reviews of one initial source substantially increased retention of the initial claim relative to an equal-sized unrelated-memory control.
+Under the frozen v0.4.3 task family and `qwen3.5-4b` configuration, five explicitly derivative, target-consistent reviews of one initial source substantially increased retention of the initial claim relative to an equal-count unrelated-memory control.
 
 ## Limitations
 
 The archive does not pin every external runtime detail/model artifact hash, so exact computational replication requires additional environment metadata. Generalization to other model families was not established by v0.4.3.
+
+# 2026-09-27 — Level B direct-configuration replication of v0.4.3
+
+**Status:** COMPLETED — H1 SUPPORTED; H2 NOT SUPPORTED; SAME-PROJECT DIRECT REPLICATION
+
+A fresh behavioral collection reran the frozen v0.4.3 protocol in the same direct-configuration class.
+
+## Integrity
+
+- 168/168 planned keys valid;
+- 0 duplicates;
+- 0 target-trajectory failures;
+- 0 target-trajectory transport retries;
+- V1–V4 passed.
+
+## Results
+
+| Hypothesis | Retention | RD | 95% CI | Holm p | Verdict |
+| --- | ---: | ---: | ---: | ---: | --- |
+| H1 `passive_repeat > neutral_filler` | 24/32 vs 0/32 | 0.75 | [0.59375, 0.90625] | 2.38419e-7 | **Supported** |
+| H2 `active_plain > active_lineage` | 3/32 vs 0/32 | 0.09375 | [0, 0.21875] | 0.25 | **Not supported** |
+
+This is a Level B direct-configuration replication conducted within the same project. It is not an independent-lab replication, not a cross-family replication, and not bit-for-bit runtime reproduction because the historical original GGUF artifact was not hash-pinned.
+
+The result strengthens the claim that H1 is reproducible within the tested direct-configuration class. It does not resolve the construct confounds in H1 or establish a literal source-counting mechanism.
+
+Archived release: `iaer-v0.4.3-level-b-replication-20260927`.
 
 # v0.5.0 — Phi-4-mini-instruct cross-family qualification attempt
 
@@ -280,7 +307,8 @@ The raw `results_v0_7.jsonl` is contained in the public results-release ZIP and 
 | v0.3.1 | Calibration/exploratory | No |
 | v0.4.1 | Aborted confirmatory attempt | No |
 | v0.4.2 | Aborted pre-data confirmatory attempt | No |
-| v0.4.3 | Behavioral-confirmatory; completed and audited | **Yes, v0.4.3 only** |
+| v0.4.3 | Behavioral-confirmatory; completed and audited | **Yes — original confirmatory study** |
+| 2026-09-27 Level B | Same-project direct-configuration replication of frozen v0.4.3 protocol | **Replicates the original H1/H2 tests; not a new cross-family confirmatory version** |
 | v0.5.0 | Cross-family qualification; invalid/inconclusive | No |
 | v0.5.1 | Exploratory interface diagnostic | No |
 | v0.5.2 | Preregistered eligibility pilot; INELIGIBLE | No |
@@ -310,6 +338,22 @@ The raw `results_v0_7.jsonl` is contained in the public results-release ZIP and 
 
 **PAUSED — instrument redesign path exhausted under v0.7.**
 
-The only completed confirmatory IAER result remains v0.4.3 on the frozen Qwen configuration. Cross-family generalization remains unresolved: later Phi and Ministral programs did not reach a valid confirmatory IAER comparison.
+The original confirmatory IAER study remains v0.4.3 on the frozen Qwen configuration. Its H1 behavioral contrast was reproduced in a fresh 2026-09-27 Level B same-project direct-configuration replication. Cross-family generalization remains unresolved: later Phi and Ministral programs did not reach a valid confirmatory IAER comparison.
 
 The next step is not v0.8. The project has completed a program-level scientific audit in [`program_audit_v0_2_to_v0_7.md`](program_audit_v0_2_to_v0_7.md). A future restart should occur only if a materially new measurement idea satisfies the restart criteria recorded there.
+
+# Post-publication correction status — 2026-09-28
+
+The historical Version 0.4 empirical preprint contained a bounded priority statement describing IAER as, "to our knowledge," the first preregistered controlled test of the complete operational combination. That **priority claim is withdrawn**.
+
+The correction has two independent bases:
+
+1. the later prior-art reassessment found that the literature basis was not strong enough for a responsible "first" claim; and
+2. the later chronology audit supports "pre-specified and frozen before collection" for v0.4.3, but did not locate a public or independently verifiable pre-collection timestamp of the preregistration artifact itself.
+
+The historical frozen experiment, raw data, numerical H1/H2 results, and old publication artifacts remain preserved.
+
+See:
+- `IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md`
+- `IAER_PRIOR_ART_REASSESSMENT_2026-09-28.md`
+- `V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md`
