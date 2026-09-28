@@ -6,7 +6,7 @@
 
 ## Executive conclusion
 
-The IAER program has produced **one completed confirmatory finding** and a sequence of exploratory, qualification, calibration, and instrument-redesign results that constrain how that finding may be generalized.
+The IAER program produced one original completed confirmatory study (v0.4.3) and a sequence of exploratory, qualification, calibration, and instrument-redesign results that constrain how that finding may be generalized. A later 2026-09-27 Level B same-project direct-configuration replication reproduced the original H1 behavioral contrast under the frozen v0.4.3 protocol.
 
 The strongest supported statement remains the v0.4.3 H1 result:
 
@@ -33,7 +33,7 @@ The program should therefore remain **PAUSED**. No v0.8 run is recommended under
 - H2 `active_plain > active_lineage`: not supported;
 - provenance exactness 168/168: descriptive/exploratory only.
 
-This is the **only version included in confirmatory IAER inference**.
+This is the **original confirmatory IAER study**. The later Level B collection is reported separately as a direct same-configuration-class replication of the frozen protocol; it is not a new cross-family confirmatory version.
 
 ### Tier B — exploratory, qualification, calibration, or redesign evidence
 
@@ -79,7 +79,7 @@ The original Freeze-A public tag omitted several calibration-specific implementa
 
 ### Supported claim A
 
-In v0.4.3, under the exact frozen Qwen task/configuration, passive repetition of five explicitly derivative reviews substantially increased resistance to later counterevidence relative to an equal-sized neutral-filler control.
+In v0.4.3, under the exact frozen Qwen task/configuration, passive repetition of five explicitly derivative, target-consistent reviews substantially increased resistance to later counterevidence relative to an equal-count neutral-filler control.
 
 ### Supported claim B
 
@@ -157,3 +157,36 @@ No new Zenodo revision is required merely to continue experimenting. If a method
 The v0.4.3 H1 finding remains valid within its frozen scope. Cross-family generalization remains unresolved. v0.5-v0.7 reveal substantial measurement/eligibility constraints and provide hypotheses for future work, but they do not justify an immediate additional behavioral run.
 
 Any future restart should begin from the restart criteria above and receive a new version identifier with a new public preregistration.
+
+## 9. Post-audit addendum — 2026-09-28
+
+### Level B direct-configuration replication
+
+A fresh 2026-09-27 collection reran the frozen v0.4.3 protocol in the same direct-configuration class.
+
+- 168/168 planned keys valid;
+- V1–V4 passed;
+- H1: 24/32 vs 0/32; RD = 0.75; Holm-adjusted p = 2.38419e-7 — **SUPPORTED**;
+- H2: 3/32 vs 0/32; RD = 0.09375; p = 0.25 — **NOT SUPPORTED**.
+
+This moves H1 from one successful collection to a narrow behavioral effect reproduced within the same direct-configuration class. It does not establish independent-lab replication, cross-family generality, or bit-for-bit runtime reproduction. The historical original GGUF artifact was not hash-pinned.
+
+### Priority-claim correction
+
+The historical Version 0.4 priority statement has been **withdrawn** after a broader post-publication prior-art reassessment. The correction does not assert that an earlier publication has been proven to implement the entire v0.4.3 protocol identically. It states that the literature basis was not sufficient for a responsible "first" claim.
+
+### Preregistration wording correction
+
+For v0.4.3, current project summaries use **pre-specified and frozen before collection** rather than **publicly preregistered before collection**. Internal freeze consistency is strong, but a public or independently verifiable pre-collection timestamp of the preregistration artifact itself was not located.
+
+These corrections do not alter the raw data, H1/H2 calculations, or historical frozen files.
+
+## 10. Updated disposition
+
+The program remains **PAUSED** with respect to new IAER behavioral generation under the old measurement family.
+
+The strongest current empirical statement is now:
+
+> Under the frozen v0.4.3 task family and Qwen direct-configuration class, five explicitly derivative, target-consistent reviews of one initial source substantially increased retention of the source-supported claim relative to five unrelated memory records, and this behavioral contrast was reproduced in a fresh same-project Level B collection.
+
+The mechanism remains unresolved, and cross-family generalization remains unestablished.
