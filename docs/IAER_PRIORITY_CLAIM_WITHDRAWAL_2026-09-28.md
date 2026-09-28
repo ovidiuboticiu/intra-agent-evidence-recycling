@@ -45,7 +45,7 @@ This correction does **not** change:
 - H1: `passive_repeat > neutral_filler`, 22/32 versus 0/32, paired RD = 0.6875, Holm-adjusted exact McNemar p = 9.5367431640625e-7;
 - H2: `active_plain > active_lineage`, 2/32 versus 0/32, paired RD = 0.0625, Holm-adjusted p = 0.50;
 - the post-publication forensic finding that no material data, pairing, or statistical error was found;
-- the later 2026-09-27 direct-configuration replication, which reproduced H1 in the same tested configuration (24/32 versus 0/32; RD = 0.75) and again did not support H2 (3/32 versus 0/32; RD = 0.09375).
+- the later 2026-09-27 direct-configuration replication, which reproduced H1 in the same direct-configuration class under the frozen v0.4.3 protocol (24/32 versus 0/32; RD = 0.75) and again did not support H2 (3/32 versus 0/32; RD = 0.09375).
 
 The direct-configuration replication is not an independent-lab or cross-family replication.
 
