@@ -16,7 +16,7 @@ This draft supersedes the *positioning* of the historical Version 0.4 preprint w
 
 Three post-publication changes are explicit:
 
-1. The historical statement that IAER was, "to our knowledge, the first preregistered controlled test of that complete operational combination," is **withdrawn**. A broader later prior-art audit found materially close pre-existing work that the original search had not adequately incorporated. No priority claim is made in this draft.
+1. The historical statement that IAER was, "to our knowledge, the first preregistered controlled test of that complete operational combination," is **withdrawn**. A broader later prior-art audit found both materially close work that had not been identified before publication and close work already cited in Version 0.4 that had not been weighted conservatively enough when the priority wording was formulated. No priority claim is made in this draft.
 2. For v0.4.3, `pre-specified and frozen before collection` replaces `publicly preregistered before collection`. A forensic chronology audit found strong internal freeze consistency but did not locate a public or independently verifiable pre-collection timestamp of the preregistration artifact itself.
 3. The neutral control is described as an **equal-count unrelated-memory control**, not as length-matched.
 
