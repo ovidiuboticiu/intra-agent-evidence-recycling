@@ -105,15 +105,26 @@ The scientific-integrity principle and the priority-claim correction were integr
 
 The GitHub-side finalization changes were merged through **PR #7** (`Finalize GitHub record after IAER correction`) at merge commit `b3fc62669cb928f36a9b354efe2ef2f73b560880`.
 
-## Remaining external action
+## External Zenodo correction — completed 2026-09-28
 
-A corrected empirical preprint draft is preserved at:
+A corrected empirical preprint draft remains preserved at:
 
 `docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md`
 
-No new Zenodo preprint version is currently planned. The remaining external action is limited to a **metadata-only post-publication correction note** on the existing historical Zenodo record, so that readers who arrive directly at Zenodo see the withdrawn-priority and preregistration clarifications without requiring a new publication version.
+No new Zenodo preprint version was created. Instead, the existing historical Version 0.4 record (`10.5281/zenodo.22282120`) received a **metadata/description-only post-publication correction**.
 
-This minimal external step is tracked in **GitHub issue #8** (`Add IAER correction note to Zenodo metadata`).
+The public record now states that:
+
+- the historical priority claim is withdrawn;
+- v0.4.3 is described as **pre-specified and frozen before collection** rather than publicly preregistered before collection;
+- the neutral control is described as an **equal-count control containing five unrelated memory records** rather than length-matched;
+- the original v0.4.3 numerical results are unchanged;
+- the 2026-09-27 Level B same-project direct-configuration replication reproduced H1 while H2 remained unsupported;
+- the Level B replication is not independent-lab, not cross-family, and not bit-for-bit runtime reproduction.
+
+The historical PDF, title, Version 0.4 identifier, and DOI were not replaced or deleted.
+
+GitHub issue #8 tracked this action and is closed after verification of the public Zenodo page.
 
 See:
 

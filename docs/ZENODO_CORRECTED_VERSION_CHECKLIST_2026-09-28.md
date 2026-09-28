@@ -1,7 +1,7 @@
 # Zenodo Metadata-Correction Checklist — IAER
 
 **Date prepared:** 2026-09-28  
-**Status:** PENDING MANUAL METADATA UPDATE  
+**Status:** COMPLETED — 2026-09-28  
 **Publication plan:** no new Zenodo preprint version is currently planned.
 
 ## Goal
@@ -16,22 +16,22 @@ Historical empirical preprint:
 
 ## Minimal Zenodo action
 
-- [ ] Open the historical record while signed in to Zenodo.
-- [ ] Choose the option to edit the record metadata.
-- [ ] Do **not** replace or delete the historical PDF.
-- [ ] Do **not** create a new version unless a future publication decision explicitly changes.
-- [ ] Add the following note prominently to the description/metadata:
+- [x] Open the historical record while signed in to Zenodo.
+- [x] Choose the option to edit the record metadata.
+- [x] Do **not** replace or delete the historical PDF.
+- [x] Do **not** create a new version unless a future publication decision explicitly changes.
+- [x] Add the following note prominently to the description/metadata:
 
 > **Post-publication correction — 28 September 2026:** The historical priority claim stating that this was, “to our knowledge, the first preregistered controlled test of that complete operational combination,” has been withdrawn following a broader prior-art reassessment. IAER v0.4.3 is now described as **pre-specified and frozen before collection**; a public or independently verifiable pre-collection timestamp of the preregistration artifact was not located. The original v0.4.3 numerical results are unchanged. A 2026-09-27 same-project Level B direct-configuration replication reproduced H1 under the frozen protocol. Full correction record: https://github.com/ovidiuboticiu/intra-agent-evidence-recycling/blob/main/docs/POST_PUBLICATION_CORRECTION_RECORD_2026-09-28.md
 
-- [ ] Save/publish the metadata edit.
-- [ ] Verify from the public Zenodo page that the correction note is visible.
+- [x] Save/publish the metadata edit.
+- [x] Verify from the public Zenodo page that the correction note is visible.
 
 ## After the metadata edit
 
-- [ ] Record the date/time of the Zenodo metadata update in GitHub issue #8.
-- [ ] Add the final public Zenodo state to the GitHub correction record if needed.
-- [ ] Close issue #8.
+- [x] Record completion of the Zenodo metadata update in GitHub issue #8.
+- [x] Add the final public Zenodo state to the GitHub correction record.
+- [x] Close issue #8.
 
 ## Do not do
 
@@ -40,3 +40,8 @@ Historical empirical preprint:
 - Do not restore a "first" or equivalent priority claim.
 - Do not describe the Level B replication as independent-lab or cross-family.
 - Do not create a new Zenodo version merely for cosmetic consistency if scientific publication is not an objective.
+
+
+## Completion record
+
+The metadata-only correction was published on 2026-09-28. The public Zenodo page was visually verified to show the 2026-09-28 post-publication correction and the `pre-specification` keyword. No new Zenodo version was created and the historical PDF remained unchanged.

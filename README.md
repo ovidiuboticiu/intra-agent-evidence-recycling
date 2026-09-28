@@ -50,7 +50,7 @@ This correction does not change the frozen v0.4.3 data, H1/H2 numerical results,
 - [`docs/IAER_PRIOR_ART_REASSESSMENT_2026-09-28.md`](docs/IAER_PRIOR_ART_REASSESSMENT_2026-09-28.md)
 - [`docs/POST_PUBLICATION_CORRECTION_RECORD_2026-09-28.md`](docs/POST_PUBLICATION_CORRECTION_RECORD_2026-09-28.md) — canonical summary of what changed and what remains unchanged
 - [`docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md`](docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md) — corrected manuscript draft preserved in the repository; no new Zenodo version is currently planned
-- [`docs/ZENODO_CORRECTED_VERSION_CHECKLIST_2026-09-28.md`](docs/ZENODO_CORRECTED_VERSION_CHECKLIST_2026-09-28.md) — minimal Zenodo metadata-correction checklist; no new-version publication is currently planned
+- [`docs/ZENODO_CORRECTED_VERSION_CHECKLIST_2026-09-28.md`](docs/ZENODO_CORRECTED_VERSION_CHECKLIST_2026-09-28.md) — completed Zenodo metadata-correction checklist; no new-version publication is planned
 
 ## Current status
 
@@ -214,7 +214,7 @@ The historical v0.4.3 empirical manuscript remains published as a public, non-pe
 - v0.4.3 reproducibility archive: [10.5281/zenodo.22259801](https://doi.org/10.5281/zenodo.22259801)
 - Methodological note DOI: [10.5281/zenodo.22306245](https://doi.org/10.5281/zenodo.22306245)
 
-**Post-publication correction:** the historical empirical title and Version 0.4 artifact are preserved rather than silently rewritten. The later forensic chronology audit found strong evidence of pre-specification/freeze consistency but did not locate a public or independently verifiable pre-collection timestamp of the v0.4.3 preregistration artifact. A later prior-art reassessment also found that the evidence base for the historical "first preregistered controlled test" priority wording was insufficient. That priority claim is therefore **withdrawn**. See [`docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md`](docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md) and [`docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md`](docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md).
+**Post-publication correction:** the historical empirical title and Version 0.4 artifact are preserved rather than silently rewritten. On 2026-09-28, the existing Zenodo record metadata/description was updated in place with the withdrawn-priority notice, pre-specification wording, equal-count control wording, and Level B replication scope; the historical PDF and DOI were not replaced. The later forensic chronology audit found strong evidence of pre-specification/freeze consistency but did not locate a public or independently verifiable pre-collection timestamp of the v0.4.3 preregistration artifact. A later prior-art reassessment also found that the evidence base for the historical "first preregistered controlled test" priority wording was insufficient. That priority claim is therefore **withdrawn**. See [`docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md`](docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md) and [`docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md`](docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md).
 
 Later v0.5-v0.7 qualification/redesign results do not provide a valid cross-family confirmatory IAER estimate. The 2026-09-27 Level B run is a same-configuration direct replication, not a cross-family estimate.
 
