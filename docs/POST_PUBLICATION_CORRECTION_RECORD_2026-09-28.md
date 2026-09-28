@@ -66,11 +66,11 @@ Scope:
 
 ### 5. Citation metadata made fail-safe
 
-Until a corrected Zenodo empirical-preprint version is published, `CITATION.cff` no longer recommends the historically superseded v0.4 preprint as the preferred citation. It points to the v0.4.3 software/reproducibility archive:
+Because no corrected Zenodo preprint version is currently planned, `CITATION.cff` does not recommend the historically superseded v0.4 preprint as the preferred citation. It points to the v0.4.3 software/reproducibility archive:
 
 `10.5281/zenodo.22259801`
 
-After the corrected Zenodo version receives its DOI/version identifier, `CITATION.cff` should be updated again.
+If a corrected Zenodo version is ever published later, `CITATION.cff` can be updated then.
 
 ## What remains unchanged
 
@@ -107,11 +107,13 @@ The GitHub-side finalization changes were merged through **PR #7** (`Finalize Gi
 
 ## Remaining external action
 
-A corrected empirical preprint draft is present at:
+A corrected empirical preprint draft is preserved at:
 
 `docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md`
 
-The remaining publication action is outside GitHub: create and publish a corrected new Zenodo version, then update `CITATION.cff` to that new persistent record. This external step is tracked in **GitHub issue #8** (`Publish corrected IAER empirical preprint on Zenodo`).
+No new Zenodo preprint version is currently planned. The remaining external action is limited to a **metadata-only post-publication correction note** on the existing historical Zenodo record, so that readers who arrive directly at Zenodo see the withdrawn-priority and preregistration clarifications without requiring a new publication version.
+
+This minimal external step is tracked in **GitHub issue #8** (`Add IAER correction note to Zenodo metadata`).
 
 See:
 
