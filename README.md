@@ -58,6 +58,8 @@ This correction does not change the frozen v0.4.3 data, H1/H2 numerical results,
 
 No v0.8 behavioral run is currently authorized or recommended. The experimental program has completed its v0.2–v0.7 scientific audit. Current work is limited to synthesis, publication, external-replication preparation, and preservation of the audit trail; no new behavioral collection is currently authorized.
 
+A prospective post-v0.7 lineage-metadata follow-up (MDP-Candidate 0.5/0.6) was abandoned pre-data on 2026-09-28 after adversarial design review; no behavioral calls were made and no runner was written. See [`docs/MDP_CANDIDATE_0_6_CLOSURE.md`](docs/MDP_CANDIDATE_0_6_CLOSURE.md).
+
 | Version | Role | Status |
 | --- | --- | --- |
 | v0.2 | Early experimental instrument | Closed; measurement-limited |
