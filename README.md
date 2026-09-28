@@ -48,7 +48,9 @@ This correction does not change the frozen v0.4.3 data, H1/H2 numerical results,
 
 - [`docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md`](docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md)
 - [`docs/IAER_PRIOR_ART_REASSESSMENT_2026-09-28.md`](docs/IAER_PRIOR_ART_REASSESSMENT_2026-09-28.md)
+- [`docs/POST_PUBLICATION_CORRECTION_RECORD_2026-09-28.md`](docs/POST_PUBLICATION_CORRECTION_RECORD_2026-09-28.md) — canonical summary of what changed and what remains unchanged
 - [`docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md`](docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md) — draft for a future corrected Zenodo version; not yet published
+- [`docs/ZENODO_CORRECTED_VERSION_CHECKLIST_2026-09-28.md`](docs/ZENODO_CORRECTED_VERSION_CHECKLIST_2026-09-28.md) — remaining manual publication steps
 
 ## Current status
 
@@ -250,6 +252,8 @@ intra-agent-evidence-recycling/
 │   ├── IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md
 │   ├── IAER_PRIOR_ART_REASSESSMENT_2026-09-28.md
 │   ├── IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md
+│   ├── POST_PUBLICATION_CORRECTION_RECORD_2026-09-28.md
+│   ├── ZENODO_CORRECTED_VERSION_CHECKLIST_2026-09-28.md
 │   ├── experiment_history.md
 │   ├── program_audit_v0_2_to_v0_7.md
 │   ├── METHODOLOGICAL_NOTE_PREPRINT_v0_3.md
@@ -284,7 +288,7 @@ The current non-experimental publication is the methodological note v0.4: [10.52
 
 ## Citation
 
-Citation metadata for the empirical/software record is provided in [`CITATION.cff`](CITATION.cff).
+Citation metadata is provided in [`CITATION.cff`](CITATION.cff). Until the corrected empirical preprint is published on Zenodo, the preferred citation points to the v0.4.3 software/reproducibility archive rather than recommending the historically superseded v0.4 preprint.
 
 Historical empirical preprint:
 
