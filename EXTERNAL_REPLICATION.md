@@ -68,11 +68,11 @@ See:
 - v0.7 results-and-closure dataset: `10.5281/zenodo.22308045`
 - v0.7 dataset concept DOI: `10.5281/zenodo.22308044`
 
-A corrected empirical preprint draft exists in the repository but is **not yet a Zenodo publication**:
+A corrected empirical preprint draft exists in the repository for transparency, but **no new Zenodo preprint version is currently planned**:
 
 [`docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md`](docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md)
 
-Until that corrected Zenodo version is published, `CITATION.cff` points to the v0.4.3 software/reproducibility archive rather than recommending the historically superseded v0.4 preprint.
+`CITATION.cff` points to the v0.4.3 software/reproducibility archive rather than recommending the historically superseded v0.4 preprint. If a corrected Zenodo version is ever published later, citation metadata can be updated then.
 
 The v0.7 Zenodo dataset is the persistent technical archive for the measurement-decoupling pilot and closure package. Its publication record is preserved in [`docs/V0_7_ZENODO_DATASET_PUBLICATION_RECORD.md`](docs/V0_7_ZENODO_DATASET_PUBLICATION_RECORD.md). v0.7 remains `REDESIGN_FAILED_STOP` and is not an IAER replication or confirmatory result.
 
