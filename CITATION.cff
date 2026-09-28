@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this repository, dataset, or experimental design, please cite the preferred manuscript below."
+message: "Until the corrected empirical preprint version is published on Zenodo, please cite the v0.4.3 software/reproducibility archive below. The historical v0.4 preprint remains part of the record but its priority wording has been withdrawn."
 title: "Intra-Agent Evidence Recycling"
 type: software
 authors:
@@ -13,11 +13,15 @@ url: "https://doi.org/10.5281/zenodo.22259801"
 abstract: >-
   A pre-specified and frozen behavioral study of whether repeated memory records
   derived from one external source acquire excess behavioral weight in a local
-  LLM agent, and whether explicit lineage metadata mitigates that effect. Later
-  forensic validation reproduced the numerical H1/H2 results but did not locate
-  a public or independently verifiable pre-collection timestamp for the v0.4.3
-  preregistration artifact; the historical published preprint title is preserved
-  unchanged below.
+  LLM agent, and whether explicit lineage metadata mitigates that effect. The
+  v0.4.3 H1 behavioral contrast was later reproduced in a fresh
+  same-direct-configuration-class collection under the frozen protocol.
+  Post-publication forensic validation reproduced the original numerical H1/H2
+  results but did not locate a public or independently verifiable pre-collection
+  timestamp for the v0.4.3 preregistration artifact. A later prior-art
+  reassessment also found that the historical priority claim was not sufficiently
+  supported; that claim has been withdrawn. Mechanistic source-counting and
+  cross-family generality remain unestablished.
 keywords:
   - LLM agents
   - agent memory
@@ -26,14 +30,12 @@ keywords:
   - lineage metadata
   - reproducibility
 preferred-citation:
-  type: article
+  type: software
   authors:
     - family-names: "Boticiu"
       given-names: "Ovidiu"
-  title: "When One Source Returns: A Preregistered Behavioral Study of Intra-Agent Evidence Recycling"
+  title: "Intra-Agent Evidence Recycling v0.4.3 — Behavioral Confirmatory Study"
   year: 2026
-  month: 9
-  day: 3
-  version: "0.4"
-  doi: "10.5281/zenodo.22282120"
-  url: "https://doi.org/10.5281/zenodo.22282120"
+  version: "0.4.3"
+  doi: "10.5281/zenodo.22259801"
+  url: "https://doi.org/10.5281/zenodo.22259801"
