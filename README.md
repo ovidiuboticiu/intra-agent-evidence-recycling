@@ -42,7 +42,7 @@ The historical empirical preprint (Version 0.4, DOI `10.5281/zenodo.22282120`) c
 
 **That priority claim is now withdrawn.**
 
-A broader post-publication prior-art reassessment found materially close earlier work on repetition, dependent/correlated evidence, memory-carried evidence, and provenance that the original search did not adequately incorporate. The withdrawal does **not** assert that an earlier paper has been shown to implement the complete IAER v0.4.3 protocol identically. It means the evidential basis is no longer considered sufficient for a responsible "first" claim.
+A broader post-publication prior-art reassessment found that the original literature basis was insufficient for a priority claim: some materially close work had not been identified before publication, while some close work already cited in Version 0.4 was not weighted conservatively enough when the "first" wording was formulated. The withdrawal does **not** assert that an earlier paper has been shown to implement the complete IAER v0.4.3 protocol identically. It means the evidential basis is no longer considered sufficient for a responsible "first" claim.
 
 This correction does not change the frozen v0.4.3 data, H1/H2 numerical results, or the later direct-configuration replication.
 
@@ -88,9 +88,9 @@ The methodological/negative-results note synthesizing v0.5.0–v0.7 is now publi
 
 The methodological note does **not** claim priority for repeated/dependent-evidence effects or for construct-validity arguments in LLM evaluation. Its contribution is the preserved longitudinal case study showing why qualification failure should not be mislabeled as a cross-family non-replication.
 
-## Only completed confirmatory IAER result: v0.4.3
+## Original confirmatory IAER study: v0.4.3
 
-v0.4.3 is the only version included in confirmatory IAER inference.
+v0.4.3 is the original confirmatory IAER study. The later 2026-09-27 Level B collection is reported separately below as a direct same-configuration-class replication of the frozen protocol.
 
 All **168/168** planned trajectories were valid and all four frozen pre-specified validity gates passed.
 
@@ -122,7 +122,7 @@ All **168/168** planned keys were valid, with no duplicates, failures, or target
 | H1: `passive_repeat > neutral_filler` | 24/32 vs 0/32 | 0.75 | [0.59375, 0.90625] | 2.38419e-7 | **Supported** |
 | H2: `active_plain > active_lineage` | 3/32 vs 0/32 | 0.09375 | [0, 0.21875] | 0.25 | **Not supported** |
 
-This moves H1 from a single successful collection to a **narrow behavioral effect reproduced in the same tested configuration class**. It does not establish cross-family generalization, architecture-independent IAER, or a literal source-counting mechanism.
+This moves H1 from a single successful collection to a **narrow behavioral effect reproduced in the same direct-configuration class under the frozen v0.4.3 protocol**. The historical original GGUF artifact was not hash-pinned, so this is not claimed as bit-for-bit runtime reproduction. It does not establish cross-family generalization, architecture-independent IAER, or a literal source-counting mechanism.
 
 Archived release: [`iaer-v0.4.3-level-b-replication-20260927`](https://github.com/ovidiuboticiu/intra-agent-evidence-recycling/releases/tag/iaer-v0.4.3-level-b-replication-20260927)
 
