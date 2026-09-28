@@ -28,6 +28,14 @@ Final experimental and methodological decisions, authorization and execution of 
 
 See [`AI_USE.md`](AI_USE.md) for the full contribution and AI-use disclosure.
 
+## Scientific integrity principle
+
+IAER adopts an explicit transparency rule: **we take responsibility for both successful results and mistakes**. Favorable findings are not protected from later correction, and errors, failed hypotheses, invalid runs, methodological weaknesses, and withdrawn claims are not silently deleted or rewritten.
+
+Corrections are dated and versioned; historical artifacts remain preserved; empirical results that survive audit remain reported even when their interpretation changes; and claims that can no longer be responsibly supported are withdrawn or narrowed publicly with the reason stated.
+
+See [`docs/SCIENTIFIC_INTEGRITY_PRINCIPLE.md`](docs/SCIENTIFIC_INTEGRITY_PRINCIPLE.md) for the project-level rule.
+
 ## Current status
 
 **Project disposition: PAUSED — instrument redesign path exhausted under v0.7.**
@@ -209,6 +217,7 @@ intra-agent-evidence-recycling/
 ├── LICENSE-CODE
 ├── LICENSE-DATA-DOCS.md
 ├── docs/
+│   ├── SCIENTIFIC_INTEGRITY_PRINCIPLE.md
 │   ├── experiment_history.md
 │   ├── program_audit_v0_2_to_v0_7.md
 │   ├── METHODOLOGICAL_NOTE_PREPRINT_v0_3.md
