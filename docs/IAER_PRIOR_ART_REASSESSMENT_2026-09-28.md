@@ -5,7 +5,7 @@
 
 ## 1. Bottom line
 
-The pre-publication literature search was not sufficient to support a durable priority claim.
+The pre-publication literature search and weighting of the literature were not sufficient to support a durable priority claim.
 
 The broad phenomena relevant to IAER already had substantial prior art before the 3 September 2026 empirical preprint, including:
 
@@ -17,6 +17,15 @@ The broad phenomena relevant to IAER already had substantial prior art before th
 - explicit provenance/lineage mechanisms for agent memory.
 
 For that reason, IAER now withdraws the historical "first preregistered controlled test" priority statement. This reassessment does **not** assert that any one earlier study used an identical IAER v0.4.3 protocol.
+
+### 1.1 What was already known versus what was newly identified
+
+The historical Version 0.4 preprint already cited and discussed several relevant works, including **Schuster et al.**, **CUE-R (Jain & Vedam)**, and **Ross et al.** The correction is therefore **not** that every close predecessor was missed. The problem is twofold:
+
+1. some highly relevant work was identified only after publication, including **Naphade**, **GovMem**, **Memory Echo**, **MemLineage**, and **CAMA**; and
+2. some close work already present in Version 0.4 was not weighted conservatively enough when the manuscript moved from a bounded search result to a "first" priority formulation.
+
+This distinction is part of the correction record.
 
 ## 2. High-overlap prior work
 
@@ -30,7 +39,6 @@ For that reason, IAER now withdraws the historical "first preregistered controll
 | Toeda, *Memory Echo and How to Stop It*, Zenodo DOI 10.5281/zenodo.21222332 | 6 Jul 2026 systems paper/pilot | Describes model-produced interpretation stored, retrieved later, and treated as externally grounded/independent evidence; uses provenance-tagged memory. | Very close conceptual prior art for self-generated memory re-entering later context and for provenance-based mitigation. |
 | Ouyang & Hou, *MemLineage: Lineage-Guided Enforcement for LLM Agent Memory*, arXiv:2605.14421 | 14 May 2026 preprint | Attaches provenance and derivation lineage to persistent agent-memory entries and propagates ancestry through derived memories. | Provenance/lineage in agent memory was not novel to IAER. |
 | Lin et al., *Beyond Memory Majority: Latent-Source Reasoning for Multi-Agent Memory Arbitration*, arXiv:2608.19701 | 20 Aug 2026 preprint | Defines Memory Correlation Bias, where multiple memories inherit the same upstream source and create a false majority; estimates effective independent sources. | Strongly overlaps the source-dependence / false-majority framing. |
-| Rahadi, *Counting Copies as Evidence: Confidence Inflation from Dependent Evidence in RAG*, DOI 10.5281/zenodo.21923648 | Aug 2026 position paper/preprint | Formalizes dependent-evidence inflation, effective independent evidence count, and controlled-provenance evaluation. | Direct conceptual prior art for "copies are not independent evidence," although it is primarily a position/methodology paper rather than an IAER-style behavioral study. |
 
 ## 3. What remains specific about IAER
 
@@ -44,7 +52,7 @@ The reassessment does not erase the concrete IAER design. v0.4.3 combined, in on
 - a separate active-use lineage contrast;
 - paired fictional binary items and a fixed-N confirmatory decision rule.
 
-A later direct-configuration replication reran the frozen design and again produced a large H1 separation.
+A later direct-configuration replication reran the frozen design and again produced a large H1 separation. Because the historical original GGUF artifact was not hash-pinned, this is a same direct-configuration-class replication rather than bit-for-bit runtime reproduction.
 
 However, **a specific combination of already-studied components is not, by itself, a sufficient basis for a priority claim** unless a literature review establishes that claim to an appropriate standard. The original IAER search did not meet that standard.
 
@@ -97,4 +105,3 @@ Decision: **No. The priority claim is withdrawn.**
 - Memory Echo: https://doi.org/10.5281/zenodo.21222332
 - MemLineage: https://arxiv.org/abs/2605.14421
 - CAMA: https://arxiv.org/abs/2608.19701
-- Rahadi: https://doi.org/10.5281/zenodo.21923648
