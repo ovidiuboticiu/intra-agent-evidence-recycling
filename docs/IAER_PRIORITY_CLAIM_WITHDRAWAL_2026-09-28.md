@@ -16,7 +16,7 @@ This notice preserves the historical wording rather than silently rewriting the 
 
 The author **withdraws the priority claim**.
 
-The withdrawal is not a claim that an earlier paper has been shown to implement every element of the IAER v0.4.3 protocol identically. Instead, the later audit found that the literature search supporting the priority statement was incomplete and missed several materially close lines of prior work on repetition, dependent/correlated evidence, memory-carried evidence, provenance, and source dependence.
+The withdrawal is not a claim that an earlier paper has been shown to implement every element of the IAER v0.4.3 protocol identically. Instead, the later audit found that the literature basis supporting the priority statement was incomplete: some materially close work had not been identified before publication, while some close work that was already cited in Version 0.4 was not weighted conservatively enough when the priority wording was formulated.
 
 Because the evidential basis is no longer considered sufficient for a responsible "first" claim, IAER will make **no priority claim** for the underlying phenomenon or for the complete operational combination in future versions.
 
@@ -53,7 +53,7 @@ The direct-configuration replication is not an independent-lab or cross-family r
 
 The current defensible positioning is:
 
-> IAER v0.4.3 is a pre-specified, configuration-specific controlled study of a single external source re-entering a later LLM decision through derivative memory records. Its main behavioral contrast was subsequently reproduced in the same tested configuration. The study should be interpreted as a controlled experimental extension within established research on repetition, dependent evidence, correlated memory, source provenance, and belief updating, rather than as the first demonstration of the underlying phenomenon.
+> IAER v0.4.3 is a pre-specified, configuration-specific controlled study of a single external source re-entering a later LLM decision through derivative memory records. Its main behavioral contrast was subsequently reproduced in the same direct-configuration class under the frozen v0.4.3 protocol; the historical original GGUF artifact was not hash-pinned, so this is not claimed as bit-for-bit runtime reproduction. The study should be interpreted as a controlled experimental extension within established research on repetition, dependent evidence, correlated memory, source provenance, and belief updating, rather than as the first demonstration of the underlying phenomenon.
 
 This wording is intentionally narrower than the historical priority statement.
 
