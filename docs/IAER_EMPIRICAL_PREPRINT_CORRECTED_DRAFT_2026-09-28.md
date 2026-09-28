@@ -47,13 +47,13 @@ O reevaluare ulterioară a literaturii a identificat lucrări anterioare importa
 
 Large language model agents increasingly retain summaries, reviews, and execution traces derived from earlier observations. Such records may later re-enter context alongside the evidence from which they were produced, creating a risk that one epistemic source acquires additional behavioral influence. We use *intra-agent evidence recycling* (IAER) as a behavioral label for this possibility.
 
-We report a pre-specified, fixed-N behavioral study using 32 balanced fictional binary-choice items and `qwen3.5-4b` under a frozen local inference configuration. Each trajectory received one initial external source supporting an initial claim, followed later by a stronger independent counter-source. H1 tested whether five derivative, target-consistent review records increased retention relative to an equal-count control containing five unrelated memory records. H2 tested whether explicit lineage metadata reduced retention relative to unlabeled self-generated application traces.
+We report a pre-specified, fixed-N behavioral study using 32 balanced fictional binary-choice items and `qwen3.5-4b` under a frozen local inference configuration. Each core H1/H2 trajectory began with one initial external source supporting an initial claim and later received a stronger independent counter-source; the separate positive-control trajectories used genuinely independent corroborating sources. H1 tested whether five derivative, target-consistent review records increased retention relative to an equal-count control containing five unrelated memory records. H2 tested whether explicit lineage metadata reduced retention relative to unlabeled self-generated application traces.
 
 All 168 planned trajectories were valid and all four frozen pre-specified validity gates passed. H1 was supported: `passive_repeat` retained the initial claim in 22/32 items versus 0/32 under `neutral_filler` (paired risk difference = 0.6875; bootstrap 95% CI [0.531, 0.844]; Holm-adjusted exact McNemar p = 9.54 × 10⁻⁷). H2 was not supported (2/32 versus 0/32; risk difference = 0.0625; Holm-adjusted p = 0.50).
 
 A post-publication forensic audit reproduced the outcomes from raw final choices and found no material data, pairing, or statistical error. It also established an important construct limitation: H1 jointly changes derivative multiplicity, lexical/semantic repetition, target-consistent salience, explicit root references, and prompt structure, so the result does not identify literal independent-source counting as the mechanism.
 
-A fresh 2026-09-27 direct-configuration replication reproduced H1 in the same tested configuration class: 24/32 versus 0/32 (risk difference = 0.75; 95% CI [0.59375, 0.90625]; Holm-adjusted p = 2.38419 × 10⁻⁷). H2 again was not supported (3/32 versus 0/32; risk difference = 0.09375; p = 0.25). This is not an independent-lab or cross-family replication.
+A fresh 2026-09-27 direct-configuration replication reproduced H1 in the same direct-configuration class under the frozen v0.4.3 protocol: 24/32 versus 0/32 (risk difference = 0.75; 95% CI [0.59375, 0.90625]; Holm-adjusted p = 2.38419 × 10⁻⁷). H2 again was not supported (3/32 versus 0/32; risk difference = 0.09375; p = 0.25). This is not an independent-lab or cross-family replication.
 
 A post-publication prior-art reassessment identified substantial pre-existing work on repetition, dependent evidence, correlated memory, and provenance. This revision therefore makes no priority claim. IAER is positioned as a configuration-specific controlled study and experimental extension within that broader literature.
 
@@ -115,8 +115,6 @@ These studies preclude any claim that IAER first demonstrated that repeated supp
 CUE-R (Jain & Vedam, 2026) applies REMOVE, REPLACE, and DUPLICATE interventions to retrieved evidence and reports that duplication can be answer-redundant while remaining behaviorally non-neutral.
 
 Ross et al. (2026) compare duplicate, paraphrased, and diverse retrieval sets under a controlled fictional QA design. Their work directly separates redundancy from diversity and shows that diverse support can outperform duplicate or paraphrased redundancy.
-
-Rahadi (2026) frames copied documents as dependent evidence and proposes provenance-graph concepts, an Effective Independent Evidence Count, and a Confidence Inflation Gap. The work is primarily a position/methodology preprint rather than an IAER-style behavioral confirmatory study, but it is direct conceptual prior art for the idea that copies should not be treated as independent witnesses.
 
 ## 3.3 Memory-carried and correlated evidence
 
@@ -293,7 +291,7 @@ The replication used:
 - context length 8192;
 - sequential execution.
 
-The historical original GGUF hash was not preserved, so this is **not** claimed to be bit-for-bit runtime reproduction.
+The historical original GGUF hash was not preserved, so this is **not** claimed to be bit-for-bit runtime reproduction; "same direct-configuration class" is the intended scope.
 
 ## 7.1 Collection integrity
 
@@ -314,7 +312,7 @@ Provenance exactness was again 168/168 and remains descriptive.
 
 ## 7.3 Interpretation
 
-The direct replication moves H1 from a single successful collection to a **narrow behavioral effect reproduced in the same tested configuration class**.
+The direct replication moves H1 from a single successful collection to a **narrow behavioral effect reproduced in the same direct-configuration class under the frozen v0.4.3 protocol**.
 
 It does not establish:
 
@@ -486,8 +484,6 @@ Naphade, A. (2026). Rational Synthesizers or Heuristic Followers? Analyzing LLMs
 Ouyang, C., & Hou, R. (2026). *MemLineage: Lineage-Guided Enforcement for LLM Agent Memory*. arXiv:2605.14421. https://doi.org/10.48550/arXiv.2605.14421
 
 Qi, Y., Xu, X., & Li, Y. (2026). *When Not to Write Memory: Governing False Promotion from Correlated Agent Traces*. arXiv:2607.02579. https://doi.org/10.48550/arXiv.2607.02579
-
-Rahadi, I. (2026). *Counting Copies as Evidence: Confidence Inflation from Dependent Evidence in Retrieval-Augmented Generation (RAG)*. Position paper / preprint. https://doi.org/10.5281/zenodo.21923648
 
 Ross, J. J., Koopman, B., van der Vegt, A., & Zuccon, G. (2026). *How retriever redundancy and diversity impact RAG effectiveness*. arXiv:2608.13956. https://doi.org/10.48550/arXiv.2608.13956
 
