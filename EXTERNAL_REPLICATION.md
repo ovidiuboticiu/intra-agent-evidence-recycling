@@ -51,7 +51,7 @@ The frozen original experiment is preserved under [`experiments/v0_4_3/`](experi
 
 ## Post-publication correction status
 
-The historical empirical preprint remains preserved under its original title and DOI, but its historical priority claim has been **withdrawn**. The v0.4.3 study is now described as **pre-specified and frozen before collection**, not as publicly preregistered before collection, because no public or independently verifiable pre-collection timestamp of that preregistration artifact was located.
+The historical empirical preprint remains preserved under its original title and DOI, but its historical priority claim has been **withdrawn**. On 2026-09-28, the existing Zenodo record metadata/description was updated in place to display the correction publicly; the historical PDF and DOI were left unchanged. The v0.4.3 study is now described as **pre-specified and frozen before collection**, not as publicly preregistered before collection, because no public or independently verifiable pre-collection timestamp of that preregistration artifact was located.
 
 See:
 
