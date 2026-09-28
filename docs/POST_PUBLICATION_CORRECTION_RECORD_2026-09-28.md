@@ -103,7 +103,7 @@ The project does **not** claim:
 
 The scientific-integrity principle and the priority-claim correction were integrated into `main` through explicit pull requests rather than by silently rewriting historical release artifacts.
 
-The final GitHub-side synchronization commit for this correction record should be taken from `main` after the corresponding finalization pull request is merged.
+The GitHub-side finalization changes were merged through **PR #7** (`Finalize GitHub record after IAER correction`) at merge commit `b3fc62669cb928f36a9b354efe2ef2f73b560880`.
 
 ## Remaining external action
 
@@ -111,7 +111,7 @@ A corrected empirical preprint draft is present at:
 
 `docs/IAER_EMPIRICAL_PREPRINT_CORRECTED_DRAFT_2026-09-28.md`
 
-The remaining publication action is outside GitHub: create and publish a corrected new Zenodo version, then update `CITATION.cff` to that new persistent record.
+The remaining publication action is outside GitHub: create and publish a corrected new Zenodo version, then update `CITATION.cff` to that new persistent record. This external step is tracked in **GitHub issue #8** (`Publish corrected IAER empirical preprint on Zenodo`).
 
 See:
 
