@@ -1,6 +1,20 @@
 # Intra-Agent Evidence Recycling
 
-**Experimental study of memory-derived evidence weighting and lineage effects in LLM agent-style systems**
+**Experimental study of whether repeated derivative memory from one source can gain excess behavioral weight in an LLM agent-style system.**
+
+## In one minute
+
+**Question.** If an agent stores several memory records that all ultimately come from the same external source, can those repeated derivative records make the original claim harder to dislodge even though no genuinely independent evidence was added?
+
+**Main result.** In the frozen v0.4.3 experiment with `qwen3.5-4b`, the main comparison showed retention of the initial claim in **22/32** derivative-repeat cases versus **0/32** equal-count neutral-filler controls. A later same-configuration-class direct replication produced **24/32 versus 0/32**.
+
+**What this supports.** A narrow, configuration-specific behavioral effect: repeated target-consistent derivative records increased retention of the initial claim relative to the tested equal-count control.
+
+**What this does not establish.** The result does not prove that the model literally counts derivative records as independent sources, does not isolate the effect from lexical repetition, target-consistent salience, explicit root references, or prompt length, and does not establish cross-family or architecture-independent generalization. The secondary lineage-metadata hypothesis was **not supported**.
+
+**Current status.** **PAUSED.** Later cross-family qualification and measurement-redesign stages did not produce a valid new confirmatory IAER estimate, and no v0.8 behavioral run is currently authorized.
+
+**Correction record.** A historical priority claim was withdrawn after a broader prior-art reassessment. That correction changes the novelty claim, not the frozen v0.4.3 numerical result or the later same-configuration-class replication.
 
 ## Overview
 
