@@ -14,7 +14,7 @@
 
 **Current status.** **PAUSED.** Later cross-family qualification and measurement-redesign stages did not produce a valid new confirmatory IAER estimate, and no v0.8 behavioral run is currently authorized.
 
-**Correction record.** A historical priority claim was withdrawn after a broader prior-art reassessment. That correction changes the novelty claim, not the frozen v0.4.3 numerical result or the later same-configuration-class replication.
+**Correction record.** A historical priority claim was withdrawn after a broader prior-art reassessment. A later byte-integrity audit also restored five historical CSV/JSONL artifacts to the CRLF byte representation already recorded in their original manifests. These corrections change provenance/archive wording and fidelity, not the frozen v0.4.3 numerical result or the later same-configuration-class replication. See [`docs/ARCHIVAL_BYTE_INTEGRITY_CORRECTION_2026-10-05.md`](docs/ARCHIVAL_BYTE_INTEGRITY_CORRECTION_2026-10-05.md).
 
 ## Overview
 
@@ -224,6 +224,8 @@ The historical v0.4.3 empirical manuscript remains published as a public, non-pe
 
 **Historical-title caution.** The word *Preregistered* remains in the preserved title of the historical Version 0.4 artifact. Current project summaries use the narrower wording **pre-specified/frozen** because the later chronology audit did not locate a public or independently verifiable pre-collection timestamp for the v0.4.3 preregistration artifact. The historical title should therefore not be read as the current evidential wording of the project.
 
+**Historical GitHub-release wording caution.** The preserved `v0.4.3` GitHub release body also uses older wording such as *preregistered* and *independently audited*. Current documentation does not use those phrases as claims of independently timestamped public preregistration, external peer review, or external replication. See [`docs/V0_4_3_RELEASE_QUALIFICATION_2026-10-05.md`](docs/V0_4_3_RELEASE_QUALIFICATION_2026-10-05.md).
+
 > Boticiu, Ovidiu. (2026). *When One Source Returns: A Preregistered Behavioral Study of Intra-Agent Evidence Recycling* (Version 0.4) [Preprint]. Zenodo.
 
 - Historical empirical preprint DOI: [10.5281/zenodo.22282120](https://doi.org/10.5281/zenodo.22282120)
@@ -233,6 +235,8 @@ The historical v0.4.3 empirical manuscript remains published as a public, non-pe
 **Post-publication correction:** the historical empirical title and Version 0.4 artifact are preserved rather than silently rewritten. On 2026-09-28, the existing Zenodo record metadata/description was updated in place with the withdrawn-priority notice, pre-specification wording, equal-count control wording, and Level B replication scope; the historical PDF and DOI were not replaced. The later forensic chronology audit found strong evidence of pre-specification/freeze consistency but did not locate a public or independently verifiable pre-collection timestamp of the v0.4.3 preregistration artifact. A later prior-art reassessment also found that the evidence base for the historical "first preregistered controlled test" priority wording was insufficient. That priority claim is therefore **withdrawn**. See [`docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md`](docs/V0_4_3_FORENSIC_VALIDATION_ADDENDUM_v1_0.md) and [`docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md`](docs/IAER_PRIORITY_CLAIM_WITHDRAWAL_2026-09-28.md).
 
 Later v0.5-v0.7 qualification/redesign results do not provide a valid cross-family confirmatory IAER estimate. The 2026-09-27 Level B run is a same-configuration direct replication, not a cross-family estimate.
+
+Historical byte-preservation can be checked with `python tools/verify_historical_byte_integrity.py`.
 
 ## Experimental discipline
 
