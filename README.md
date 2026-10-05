@@ -222,6 +222,8 @@ No rescue run is permitted under v0.7.
 
 The historical v0.4.3 empirical manuscript remains published as a public, non-peer-reviewed preprint under its original title:
 
+**Historical-title caution.** The word *Preregistered* remains in the preserved title of the historical Version 0.4 artifact. Current project summaries use the narrower wording **pre-specified/frozen** because the later chronology audit did not locate a public or independently verifiable pre-collection timestamp for the v0.4.3 preregistration artifact. The historical title should therefore not be read as the current evidential wording of the project.
+
 > Boticiu, Ovidiu. (2026). *When One Source Returns: A Preregistered Behavioral Study of Intra-Agent Evidence Recycling* (Version 0.4) [Preprint]. Zenodo.
 
 - Historical empirical preprint DOI: [10.5281/zenodo.22282120](https://doi.org/10.5281/zenodo.22282120)
@@ -306,7 +308,7 @@ The current non-experimental publication is the methodological note v0.4: [10.52
 
 Citation metadata is provided in [`CITATION.cff`](CITATION.cff). Because no corrected Zenodo preprint version is currently planned, the preferred citation points to the v0.4.3 software/reproducibility archive rather than recommending the historically superseded v0.4 preprint.
 
-Historical empirical preprint:
+Historical empirical preprint (title preserved for record; see the historical-title caution above):
 
 > Boticiu, Ovidiu. (2026). *When One Source Returns: A Preregistered Behavioral Study of Intra-Agent Evidence Recycling* (Version 0.4) [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.22282120
 
