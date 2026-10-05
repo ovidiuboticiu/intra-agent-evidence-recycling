@@ -2,4 +2,8 @@
 experiments/v0_4_3/** -text
 experiments/v0_5_0/** -text
 experiments/v0_5_1_diagnostic/** -text
-experiments/v0_5_2_eligibility/** -text
+experiments/v0_5_2_eligibility/** -textexperiments/v0_3_1/results_v0_3_1.jsonl -text
+experiments/v0_3_1/stimuli_v0_3.csv -text
+experiments/v0_4_1_aborted/results_v0_4.jsonl -text
+experiments/v0_4_1_aborted/stimuli_v0_4.csv -text
+experiments/v0_4_2_aborted/stimuli_v0_4_2.csv -text
